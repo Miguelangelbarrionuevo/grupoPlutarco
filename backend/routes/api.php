@@ -22,3 +22,15 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 Route::post('/reservas', [ReservaController::class, 'store']);
 Route::post('/trabaja', [SolicitudTrabajoController::class, 'store']);
+use App\Http\Controllers\Api\AdminReservaController;
+
+Route::prefix('admin')->group(function () {
+    Route::get('/reservas', [AdminReservaController::class, 'index']); // Ver todas las reservas
+    Route::delete('/reservas/{id}', [AdminReservaController::class, 'destroy']); // Cancelar una reserva
+});
+
+
+use App\Http\Controllers\Api\AuthAdminController;
+
+Route::post('/admin/login', [AuthAdminController::class, 'login']);
+Route::middleware('auth:sanctum')->post('/admin/logout', [AuthAdminController::class, 'logout']);
