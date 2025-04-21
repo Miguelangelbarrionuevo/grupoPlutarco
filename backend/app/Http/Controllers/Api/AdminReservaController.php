@@ -3,16 +3,27 @@
 namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
 use App\Models\Reserva;
 
 class AdminReservaController extends Controller
 {
-    // Mostrar todas las reservas
-    public function index()
+    // Mostrar reservas con filtros opcionales
+    public function index(Request $request)
     {
-        $reservas = Reserva::with('restaurante')->orderBy('fecha')->get();
+        $query = Reserva::with('restaurante')->orderBy('fecha');
 
-        return response()->json($reservas);
+        // ✅ Filtrar solo reservas futuras
+        if ($request->has('futuras') && $request->futuras == '1') {
+            $query->where('fecha', '>=', now()->toDateString());
+        }
+
+        // ✅ Filtrar por restaurante
+        if ($request->has('restaurante')) {
+            $query->where('id_restaurante', $request->restaurante);
+        }
+
+        return response()->json($query->get());
     }
 
     // Cancelar una reserva
