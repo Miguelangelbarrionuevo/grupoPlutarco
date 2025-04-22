@@ -1,0 +1,13 @@
+<section class="videos-section">
+    <div class="video-container" *ngFor="let video of videos">
+      <div class="video-wrapper">
+        <video src="{{ video.url }}" autoplay muted loop></video>
+        <div class="overlay">
+          <h3>{{ video.nombre }}</h3>
+          <button>Ver más</button>
+          <button>Reservar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  

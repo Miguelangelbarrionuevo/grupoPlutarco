@@ -1,0 +1,33 @@
+.footer {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+  }
+  .logo img {
+    height: 60px;
+  }
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .links a {
+    color: #ffffffcc;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .links a:hover {
+    color: #f1c40f;
+  }
+  
+  .social a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
+    filter: brightness(0) invert(1);
+  }
+  

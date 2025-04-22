@@ -1,0 +1,30 @@
+<header class="header">
+  <div class="container">
+    <!-- Logo -->
+    <div class="logo">
+      <img src="assets/img/Logo.png" alt="El Cenachero" />
+    </div>
+
+    <!-- Botón de hamburguesa -->
+    <div class="hamburger" (click)="toggleMenu()">
+      &#9776;
+    </div>
+
+    <!-- Menú de navegación -->
+    <nav class="nav" [class.active]="menuOpen">
+      <ul>
+        <!-- Dropdown -->
+        <li class="dropdown">
+          <a href="#">Restaurantes</a>
+          <div class="dropdown-content">
+            <a href="#">Cenachero Teatinos 1</a>
+            <a href="#">A Mi Manera</a>
+            <a href="#">Cenachero Centro</a>
+          </div>
+        </li>
+        <li><a href="#">Trabaja con nosotros</a></li>
+        <li><a href="#">ES | ENG</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
