@@ -11,13 +11,13 @@
 
 .container {
   display: flex;
-  max-width: 1200px;
+  max-width: 2000px; /* 🔽 MÁS ESTRECHO que 1200px */
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 10px 40px; /* 🔽 Reduce padding si quieres menos altura también */
   justify-content: space-between;
   align-items: center;
-  padding: 40px 70px;
 }
+
 
 .logo img {
   height: 60px;

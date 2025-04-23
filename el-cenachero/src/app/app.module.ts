@@ -15,7 +15,7 @@ import { CateringComponent } from './components/catering/catering.component';
     VideosComponent,
     QuienesSomosComponent,
     FooterComponent,
-    CateringComponent
+    CateringComponent,
   ],
   imports: [
     BrowserModule

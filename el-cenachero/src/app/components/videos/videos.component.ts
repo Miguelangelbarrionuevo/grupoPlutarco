@@ -9,16 +9,16 @@ import { Component } from '@angular/core';
 export class VideosComponent {
   videos = [
     {
-      nombre: 'Restaurante 1',
+      nombre: 'Marisqueria El Cenachero Teatinos',
       url: 'assets/videos/video1.mp4'
     },
     {
-      nombre: 'Restaurante 2',
+      nombre: 'A Mi Manera',
       url: 'assets/videos/video2.mp4'
     },
     {
-      nombre: 'Restaurante 3',
-      url: 'assets/videos/video3.mp4'
+      nombre: 'Marisqueria El Cenachero Centro',
+      url: 'assets/video/video-entrada-centro.MP4'
     }
   ];
 }
