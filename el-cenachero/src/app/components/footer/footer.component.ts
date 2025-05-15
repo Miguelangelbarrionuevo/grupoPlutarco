@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -7,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-
+ @Input() facebookUrl: string = 'https://www.facebook.com/elcenacheromarisqueria/';
+  @Input() instagramUrl: string = 'https://www.instagram.com/elcenacheromarisqueria/';
+@Input() tiktokUrl: string = 'https://www.tiktok.com/@elcenacheromarisqueria/';
 }

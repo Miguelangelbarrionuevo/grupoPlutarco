@@ -2,6 +2,8 @@
 .header {
   position: fixed;
   top: 0;
+  font-family: 'Alex Brush', cursive;
+
   width: 100%;
   background-color: #1a1a1a;
   color: white;
@@ -27,6 +29,7 @@
   list-style: none;
   display: flex;
   align-items: center;
+  
   gap: 50px;
   margin: 10;
   padding: 10;
@@ -38,6 +41,7 @@
   text-decoration: none;
   padding: 8px 12px;
   transition: color 0.2s ease;
+  font-size: 20px;
 }
 
 .nav a:hover {
@@ -64,7 +68,7 @@
 .dropdown-content a {
   display: block;
   margin-bottom: 6px;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .dropdown-content a:last-child {

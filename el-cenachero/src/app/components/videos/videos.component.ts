@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-videos',
@@ -6,19 +6,47 @@ import { Component } from '@angular/core';
   templateUrl: './videos.component.html',
   styleUrl: './videos.component.css'
 })
-export class VideosComponent {
+export class VideosComponent implements AfterViewInit {
   videos = [
     {
-      nombre: 'Marisqueria El Cenachero Teatinos',
-      url: 'assets/videos/video1.mp4'
+      nombre: 'Marisquería El Cenachero Teatinos',
+      url: 'assets/video/videoentradaTeatinos.mp4',
+      ruta: '/restaurante-teatinos'
     },
     {
       nombre: 'A Mi Manera',
-      url: 'assets/videos/video2.mp4'
+      url: 'assets/video/video-entrada-amimanera.mp4',
+      ruta: '/restaurante-manera'
     },
     {
-      nombre: 'Marisqueria El Cenachero Centro',
-      url: 'assets/video/video-entrada-centro.MP4'
+      nombre: 'Marisquería El Cenachero Centro',
+      url: 'assets/video/videoentradacentro.mp4',
+      ruta: '/restaurante-centro'
     }
   ];
+
+  @ViewChildren('videoPlayer') videoPlayers!: QueryList<ElementRef<HTMLVideoElement>>;
+
+  ngAfterViewInit(): void {
+    const players = this.videoPlayers.toArray();
+    let loaded = 0;
+
+    // Esperar a que los tres vídeos estén cargados
+    players.forEach(player => {
+      player.nativeElement.muted = true;
+
+      player.nativeElement.onloadeddata = () => {
+        loaded++;
+        if (loaded === players.length) {
+          // Todos los vídeos están listos, ahora iniciar juntos
+          setTimeout(() => {
+            players.forEach(p => {
+              p.nativeElement.currentTime = 0;
+              p.nativeElement.play();
+            });
+          }, 300); // Pequeño delay para sincronía
+        }
+      };
+    });
+  }
 }

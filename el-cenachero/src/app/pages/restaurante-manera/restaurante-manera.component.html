@@ -1,0 +1,94 @@
+<app-header></app-header>
+
+<!-- HERO -->
+<section class="hero-restaurante">
+  <div class="hero-texto">
+    <h1>A MI MANERA</h1>
+    <p>Vinos De Málaga</p>
+  </div>
+</section>
+
+<!-- PLATOS DESTACADOS -->
+<section class="platos-carousel">
+  <h2>Platos destacados</h2>
+  <div class="carousel-wrapper">
+    <button class="flecha izquierda" (click)="scrollIzquierda()">‹</button>
+    
+    <div class="carousel-container" #carousel>
+      <div class="plato" *ngFor="let plato of platos">
+        <img [src]="plato.imagen" alt="Plato destacado" />
+        <div class="overlay-nombre">{{ plato.nombre }}</div>
+      </div>
+    </div>
+
+    <button class="flecha derecha" (click)="scrollDerecha()">›</button>
+  </div>
+</section>
+
+<section class="reserva-mapa">
+  <!-- Columna izquierda: texto + botón + formulario (cuando se muestre) -->
+  <div class="columna-izquierda">
+    <div class="reserva-texto">
+      <h2>¿Quieres reservar?</h2>
+      <p>Haz tu reserva para disfrutar de nuestros mejores mariscos en el centro de Málaga.</p>
+
+      <div class="botones-acciones">
+        <button (click)="mostrarFormulario = !mostrarFormulario">
+          {{ mostrarFormulario ? 'Ocultar formulario' : 'Reservar ahora' }}
+        </button>
+        <a href="https://app.box.com/s/fnt26fuxuu47zczlblrnv9xk3g5olpds" target="_blank">
+          <button type="button">CARTA</button>
+        </a>
+      </div>
+
+      <div class="info-contacto">
+        <p><strong>📍 Dirección:</strong>C. Andrómeda, 9, Puerto de la Torre, 29010 Málaga</p>
+        <p><strong>📞 Teléfono:</strong> <a href="tel:952068444"> 623 58 99 61</a></p>
+      </div>
+    </div>
+
+    <!-- FORMULARIO que aparece debajo del texto -->
+    <form *ngIf="mostrarFormulario" (ngSubmit)="enviarReserva()" #reservaForm="ngForm" novalidate class="formulario-reserva">
+      <input type="text" name="nombre" [(ngModel)]="reserva.nombre" placeholder="Tu nombre" required />
+      <input type="email" name="correo" [(ngModel)]="reserva.correo" placeholder="Tu correo" required />
+      <input type="tel" name="telefono" [(ngModel)]="reserva.telefono" placeholder="Tu teléfono" required />
+      <input type="date" name="fecha" [(ngModel)]="reserva.fecha" required />
+      <input type="time" name="hora" [(ngModel)]="reserva.hora" required />
+      <input type="number" name="comensales" [(ngModel)]="reserva.comensales" placeholder="Nº comensales" required />
+      <textarea name="mensaje_opcional" [(ngModel)]="reserva.mensaje_opcional" placeholder="Mensaje (opcional)"></textarea>
+      <button type="submit" [disabled]="reservaForm.invalid">Enviar reserva</button>
+    </form>
+  </div>
+
+  <!-- Columna derecha: Mapa siempre visible -->
+  <div class="mapa-google">
+    <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.0283411380938!2d-4.480389988585947!3d36.72188057215386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f730ca906e79%3A0xf6922cd83eefa9b!2sBar%20A%20mi%20manera!5e0!3m2!1ses!2ses!4v1747293646471!5m2!1ses!2ses"
+    width="500"
+     height="300"
+       allowfullscreen=""
+       loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+    </iframe>  </div>
+</section>
+<section class="historia-restaurante">
+  <div class="historia-imagen">
+    <img src="assets/img/infoManera.jpg" alt="Foto del restaurante" />
+  </div>
+  <div class="historia-texto">
+    <h2>La historia de A Mi Manera</h2>
+    <p>
+      Fundado en 2018, A Mi Manera nace como una bodega malagueña con alma propia. Su esencia combina el sabor de la cocina tradicional con el encanto rústico de las tabernas de toda la vida. Aquí el vino dulce corre como la alegría, y cada rincón respira historia y autenticidad.
+    </p>
+    <p>
+      Con un ambiente acogedor, mesas de madera, paredes vestidas de recuerdos y el compás del flamenco de fondo, este lugar no es solo para comer, sino para sentir. Ideal para reunirse, brindar, y dejarse llevar por el duende de Málaga, A Mi Manera es una experiencia para vivirla con los cinco sentidos.
+    </p>
+  </div>
+</section>
+
+<app-footer
+  [facebookUrl]="'https://www.facebook.com/amimanerateatinos/'"
+  [instagramUrl]="'https://www.instagram.com/amimaneraandromeda/'"
+  [tiktokUrl]="'https://www.tiktok.com/@bar.amimanera'">
+</app-footer>
+
+

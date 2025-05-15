@@ -1,9 +1,9 @@
 <header class="header">
   <div class="container">
     <!-- Logo -->
-    <div class="logo">
+    <a routerLink="/" class="logo">
       <img src="assets/img/Logo.png" alt="El Cenachero" />
-    </div>
+    </a>
 
     <!-- Botón de hamburguesa -->
     <div class="hamburger" (click)="toggleMenu()">
@@ -17,12 +17,12 @@
         <li class="dropdown">
           <a href="#">Restaurantes</a>
           <div class="dropdown-content">
-            <a href="#">Cenachero Teatinos 1</a>
-            <a href="#">A Mi Manera</a>
-            <a href="#">Cenachero Centro</a>
+            <a routerLink="/restaurante-teatinos">Cenachero Teatinos</a>
+            <a routerLink="/restaurante-centro">Cenachero Centro</a>
+            <a routerLink="/restaurante-manera">A Mi Manera</a>
           </div>
         </li>
-        <li><a href="#">Trabaja con nosotros</a></li>
+        <li><a routerLink="/trabaja">Trabaja con nosotros</a></li>
         <li><a href="#">ES | ENG</a></li>
       </ul>
     </nav>
