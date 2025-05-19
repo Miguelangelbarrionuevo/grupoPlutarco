@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthAdminController extends Controller
 {
-    // Login del admin
     public function login(Request $request)
     {
         $request->validate([
@@ -31,7 +30,6 @@ class AuthAdminController extends Controller
         ]);
     }
 
-    // Logout (opcional)
     public function logout(Request $request)
     {
         $request->user()->currentAccessToken()->delete();

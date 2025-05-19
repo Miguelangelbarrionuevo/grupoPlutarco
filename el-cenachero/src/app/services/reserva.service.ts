@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ReservaService {
-  private apiUrl = 'http://127.0.0.1:8000/api/reservas'; // URL de tu backend Laravel
+  private apiUrl = 'http://127.0.0.1:8000/api/reservas'; 
 
   constructor(private http: HttpClient) {}
 

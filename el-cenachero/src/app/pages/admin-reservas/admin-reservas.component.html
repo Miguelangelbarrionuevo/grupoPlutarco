@@ -1,0 +1,38 @@
+<app-header></app-header>
+
+<section class="panel-admin">
+  <div class="panel-container">
+    <h2>📋 Panel de Reservas</h2>
+
+    <div class="restaurantes mb-3">
+      <button (click)="seleccionarRestaurante(1)"> Cenachero Teatinos</button>
+      <button (click)="seleccionarRestaurante(3)"> Cenachero Centro</button>
+      <button (click)="seleccionarRestaurante(2)"> A Mi Manera</button>
+    </div>
+
+    <div *ngIf="restauranteIdSeleccionado" class="filtros mb-3">
+      <button (click)="cargarTodas()">Todas</button>
+      <button (click)="cargarFuturas()">Futuras</button>
+      <button (click)="cargarPasadas()">Pasadas</button>
+    </div>
+
+    <div *ngIf="reservas.length === 0 && restauranteIdSeleccionado" class="vacio">
+      No hay reservas en esta categoría.
+    </div>
+
+    <ul class="lista-reservas" *ngIf="reservas.length > 0">
+      <li *ngFor="let reserva of reservas">
+        <div class="reserva-info">
+          <h4>{{ reserva.nombre }} ({{ reserva.comensales }} comensales)</h4>
+          <p>{{ reserva.fecha }} a las {{ reserva.hora }}</p>
+          <p>📍 {{ reserva.restaurante?.nombre }}</p>
+          <p>✉️ {{ reserva.correo }} | ☎️ {{ reserva.telefono }}</p>
+          <small *ngIf="reserva.mensaje_opcional">📝 {{ reserva.mensaje_opcional }}</small>
+        </div>
+        <button class="btn-eliminar" (click)="eliminarReserva(reserva.id)">🗑️</button>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<app-footer></app-footer>

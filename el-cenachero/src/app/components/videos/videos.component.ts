@@ -31,7 +31,6 @@ export class VideosComponent implements AfterViewInit {
     const players = this.videoPlayers.toArray();
     let loaded = 0;
 
-    // Esperar a que los tres vídeos estén cargados
     players.forEach(player => {
       player.nativeElement.muted = true;
 
@@ -44,7 +43,7 @@ export class VideosComponent implements AfterViewInit {
               p.nativeElement.currentTime = 0;
               p.nativeElement.play();
             });
-          }, 300); // Pequeño delay para sincronía
+          }, 300); 
         }
       };
     });

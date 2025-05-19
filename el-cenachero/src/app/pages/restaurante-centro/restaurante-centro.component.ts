@@ -32,7 +32,7 @@ export class RestauranteCentroComponent {
     hora: '',
     comensales:'' ,
     mensaje_opcional: '' ,
-    id_restaurante: 3, // ID del restaurante Teatinos
+    id_restaurante: 3,
     mesa: null
   };
 

@@ -14,6 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
 import { TrabajaConNosotrosComponent } from './pages/trabaja-con-nosotros/trabaja-con-nosotros.component';
+import { AdminLoginComponent } from './pages/admin-login/admin-login.component';
+import { AdminReservasComponent } from './pages/admin-reservas/admin-reservas.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +30,8 @@ import { TrabajaConNosotrosComponent } from './pages/trabaja-con-nosotros/trabaj
     RestauranteManeraComponent,
     HomeComponent,
     TrabajaConNosotrosComponent,
+    AdminLoginComponent,
+    AdminReservasComponent,
   ],
   imports: [
     BrowserModule,

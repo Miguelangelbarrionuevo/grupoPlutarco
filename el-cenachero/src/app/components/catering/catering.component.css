@@ -65,7 +65,6 @@
   }
   
   
-  /* Responsive */
   @media (max-width: 768px) {
     .catering {
       flex-direction: column;

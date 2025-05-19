@@ -1,6 +1,5 @@
 <app-header></app-header>
 
-<!-- HERO -->
 <section class="hero-restaurante">
   <div class="hero-texto">
     <h1>A Mi Manera</h1>
@@ -8,7 +7,6 @@
   </div>
 </section>
 
-<!-- PLATOS DESTACADOS -->
 <section class="platos-carousel">
   <h2>Platos destacados</h2>
   <div class="carousel-wrapper">
@@ -26,7 +24,6 @@
 </section>
 
 <section class="reserva-mapa">
-  <!-- Columna izquierda: texto + botón + formulario (cuando se muestre) -->
   <div class="columna-izquierda">
     <div class="reserva-texto">
       <h2>¿Quieres reservar?</h2>
@@ -47,7 +44,6 @@
       </div>
     </div>
 
-    <!-- FORMULARIO que aparece debajo del texto -->
     <form *ngIf="mostrarFormulario" (ngSubmit)="enviarReserva()" #reservaForm="ngForm" novalidate class="formulario-reserva">
       <input type="text" name="nombre" [(ngModel)]="reserva.nombre" placeholder="Tu nombre" required />
       <input type="email" name="correo" [(ngModel)]="reserva.correo" placeholder="Tu correo" required />
@@ -60,7 +56,6 @@
     </form>
   </div>
 
-  <!-- Columna derecha: Mapa siempre visible -->
   <div class="mapa-google">
     <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.0283411380938!2d-4.480389988585947!3d36.72188057215386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f730ca906e79%3A0xf6922cd83eefa9b!2sBar%20A%20mi%20manera!5e0!3m2!1ses!2ses!4v1747293646471!5m2!1ses!2ses"
     width="500"

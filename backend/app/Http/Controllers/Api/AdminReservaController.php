@@ -8,17 +8,14 @@ use App\Models\Reserva;
 
 class AdminReservaController extends Controller
 {
-    // Mostrar reservas con filtros opcionales
     public function index(Request $request)
     {
         $query = Reserva::with('restaurante')->orderBy('fecha');
 
-        // ✅ Filtrar solo reservas futuras
         if ($request->has('futuras') && $request->futuras == '1') {
             $query->where('fecha', '>=', now()->toDateString());
         }
 
-        // ✅ Filtrar por restaurante
         if ($request->has('restaurante')) {
             $query->where('id_restaurante', $request->restaurante);
         }
@@ -26,7 +23,6 @@ class AdminReservaController extends Controller
         return response()->json($query->get());
     }
 
-    // Cancelar una reserva
     public function destroy($id)
     {
         $reserva = Reserva::find($id);

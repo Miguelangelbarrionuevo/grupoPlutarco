@@ -1,19 +1,15 @@
 <header class="header">
   <div class="container">
-    <!-- Logo -->
     <a routerLink="/" class="logo">
       <img src="assets/img/Logo.png" alt="El Cenachero" />
     </a>
 
-    <!-- Botón de hamburguesa -->
     <div class="hamburger" (click)="toggleMenu()">
       &#9776;
     </div>
 
-    <!-- Menú de navegación -->
     <nav class="nav" [class.active]="menuOpen">
       <ul>
-        <!-- Dropdown -->
         <li class="dropdown">
           <a href="#">Restaurantes</a>
           <div class="dropdown-content">

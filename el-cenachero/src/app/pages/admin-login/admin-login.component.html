@@ -1,0 +1,16 @@
+<app-header></app-header>
+
+<section class="admin-login-container">
+  <form class="login-card" (ngSubmit)="login()" #form="ngForm">
+    <h2>Panel de Administración</h2>
+
+    <input type="email" name="email" [(ngModel)]="email" placeholder="Correo electrónico" required />
+    <input type="password" name="password" [(ngModel)]="password" placeholder="Contraseña" required />
+
+    <button type="submit" [disabled]="form.invalid">Entrar</button>
+
+    <div *ngIf="error" class="login-error">Credenciales inválidas</div>
+  </form>
+</section>
+
+<app-footer></app-footer>

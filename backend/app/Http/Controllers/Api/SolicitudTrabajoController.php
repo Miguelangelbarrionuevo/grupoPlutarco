@@ -13,7 +13,6 @@ class SolicitudTrabajoController extends Controller
 {
     public function store(Request $request)
     {
-        // Validar los datos
         $validated = $request->validate([
             'nombre' => 'required|string|max:255',
             'apellidos' => 'required|string|max:255',
@@ -21,10 +20,8 @@ class SolicitudTrabajoController extends Controller
             'cv' => 'required|mimes:pdf|max:2048'
         ]);
 
-        // Guardar el archivo PDF
         $cvPath = $request->file('cv')->store('cvs', 'public');
 
-        // Crear la solicitud en la base de datos
         $solicitud = SolicitudTrabajo::create([
             'nombre' => $validated['nombre'],
             'apellidos' => $validated['apellidos'],
@@ -32,7 +29,6 @@ class SolicitudTrabajoController extends Controller
             'cv_url' => $cvPath
         ]);
 
-        // Enviar correo con el PDF adjunto
         Mail::to('miguelbarrionuevo2011@gmail.com')->send(new SolicitudRecibida($solicitud));
 
         return response()->json([

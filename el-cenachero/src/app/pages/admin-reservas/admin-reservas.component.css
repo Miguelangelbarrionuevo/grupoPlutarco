@@ -1,0 +1,152 @@
+.panel-admin {
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.panel-container {
+  background: #fff;
+  padding: 40px;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.panel-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+.filtros {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.filtros button {
+  padding: 10px 20px;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.filtros button:hover {
+  background-color: #f1c40f;
+  color: black;
+}
+
+.lista-reservas {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lista-reservas li {
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-left: 5px solid #1a1a1a;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.reserva-info h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1.2rem;
+}
+
+.reserva-info p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.reserva-info small {
+  font-style: italic;
+  color: #777;
+}
+
+.btn-eliminar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  height: fit-content;
+  align-self: center;
+  transition: 0.3s ease;
+}
+
+.btn-eliminar:hover {
+  background-color: #c0392b;
+}
+
+.vacio {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+.restaurantes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.restaurantes button {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 2px solid #1a1a1a;
+  color: #1a1a1a;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.restaurantes button:hover {
+  background-color: #f1c40f;
+  color: black;
+  border-color: #f1c40f;
+}
+
+.restaurantes button.selected {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .lista-reservas li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .filtros {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-eliminar {
+    align-self: flex-start;
+  }
+}

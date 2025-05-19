@@ -13,9 +13,9 @@
 
 .container {
   display: flex;
-  max-width: 2000px; /* 🔽 MÁS ESTRECHO que 1200px */
+  max-width: 2000px; 
   margin: 0 auto;
-  padding: 10px 40px; /* 🔽 Reduce padding si quieres menos altura también */
+  padding: 10px 40px; 
   justify-content: space-between;
   align-items: center;
 }
@@ -48,7 +48,6 @@
   color: #f1c40f;
 }
 
-/* Dropdown */
 .dropdown {
   position: relative;
 }
@@ -79,14 +78,12 @@
   display: block;
 }
 
-/* Hamburger (solo visible en móvil) */
 .hamburger {
   display: none;
   font-size: 30px;
   cursor: pointer;
 }
 
-/* RESPONSIVE */
 @media (max-width: 768px) {
   .hamburger {
     display: block;

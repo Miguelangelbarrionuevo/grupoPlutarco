@@ -1,6 +1,5 @@
 <app-header></app-header>
 
-<!-- HERO -->
 <section class="hero-restaurante">
   <div class="hero-texto">
     <h1>Marisquería El Cenachero - Centro</h1>
@@ -8,7 +7,6 @@
   </div>
 </section>
 
-<!-- PLATOS DESTACADOS -->
 <section class="platos-carousel">
   <h2>Platos destacados</h2>
   <div class="carousel-wrapper">
@@ -26,7 +24,6 @@
 </section>
 
 <section class="reserva-mapa">
-  <!-- Columna izquierda: texto + botón + formulario (cuando se muestre) -->
   <div class="columna-izquierda">
     <div class="reserva-texto">
       <h2>¿Quieres reservar?</h2>
@@ -47,7 +44,6 @@
       </div>
     </div>
 
-    <!-- FORMULARIO que aparece debajo del texto -->
     <form *ngIf="mostrarFormulario" (ngSubmit)="enviarReserva()" #reservaForm="ngForm" novalidate class="formulario-reserva">
       <input type="text" name="nombre" [(ngModel)]="reserva.nombre" placeholder="Tu nombre" required />
       <input type="email" name="correo" [(ngModel)]="reserva.correo" placeholder="Tu correo" required />
@@ -60,7 +56,6 @@
     </form>
   </div>
 
-  <!-- Columna derecha: Mapa siempre visible -->
   <div class="mapa-google">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.047956326351!2d-4.425955288586016!3d36.72140947215401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f7a81faaedeb%3A0x1d243b9b2847234b!2sEl%20Cenachero%20Centro%20-%20Marisquer%C3%ADa%20en%20el%20centro%20de%20M%C3%A1laga!5e0!3m2!1ses!2ses!4v1745576321103!5m2!1ses!2ses"
     width="500"

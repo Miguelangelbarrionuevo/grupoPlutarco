@@ -26,10 +26,8 @@ class ReservaController extends Controller
 
         $reserva = Reserva::create($validated);
 
-        // Cargar la relación restaurante para incluirla en el correo
         $reserva->load('restaurante');
 
-        // Enviar correo al dueño con los datos de la reserva
         Mail::to('miguelbarrionuevo2011@gmail.com')->send(new ReservaRealizada($reserva));
 
         return response()->json(['message' => 'Reserva guardada y correo enviado correctamente', 'reserva' => $reserva], 201);
