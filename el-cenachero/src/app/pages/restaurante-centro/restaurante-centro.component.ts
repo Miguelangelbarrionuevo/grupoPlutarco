@@ -63,4 +63,28 @@ export class RestauranteCentroComponent {
   scrollIzquierda() {
     this.carousel.nativeElement.scrollBy({ left: -200, behavior: 'smooth' });
   }
+imagenes: string[] = [
+    'assets/img/img-centro/centro1.jpeg',
+        'assets/img/img-centro/centro2.jpeg',
+    'assets/img/img-centro/centro3.jpeg',
+    'assets/img/img-centro/centro4.jpeg',
+    'assets/img/img-centro/centro5.jpeg',
+        'assets/img/img-centro/centro6.jpeg',
+
+  ];
+  imagenActual: string = this.imagenes[0];
+  private index = 0;
+  private intervalo: any;
+
+  ngOnInit(): void {
+    this.intervalo = setInterval(() => {
+      this.index = (this.index + 1) % this.imagenes.length;
+      this.imagenActual = this.imagenes[this.index];
+    }, 4000); 
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.intervalo);
+  }
+
 }

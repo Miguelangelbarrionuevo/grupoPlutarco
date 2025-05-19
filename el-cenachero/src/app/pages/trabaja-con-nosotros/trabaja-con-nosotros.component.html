@@ -1,0 +1,37 @@
+<app-header></app-header>
+
+<!-- SECCIÓN HERO - Presentación visual con imagen derecha y logo/texto izquierda -->
+<section class="trabaja-hero">
+  <div class="presentacion-texto">
+    <h1>¡Alcanza tus sueños con nosotros!</h1>
+    <p>
+      Impulsa tu carrera profesional en el mundo de la hostelería. En <i>El Cenachero</i>  buscamos personas con pasión por el servicio, el trato cercano y la excelencia gastronómica.
+    </p>
+  </div>
+</section>
+
+<section class="formulario-trabaja centrado">
+  <form (ngSubmit)="enviarSolicitud()" #formRef="ngForm" enctype="multipart/form-data" novalidate>
+    <h2>¿Quieres formar parte del equipo?</h2>
+    <p class="subtitulo-formulario">Déjanos tu currículum y únete a la experiencia de el grupo El Cenachero.</p>
+
+    <input type="text" name="nombre" [(ngModel)]="form.nombre" required placeholder="Nombre" />
+    <input type="text" name="apellidos" [(ngModel)]="form.apellidos" required placeholder="Apellidos" />
+    <input type="email" name="correo" [(ngModel)]="form.correo" required placeholder="Correo electrónico" />
+    <input type="file" (change)="onFileSelected($event)" accept="application/pdf" required />
+    <textarea name="mensaje" [(ngModel)]="form.mensaje" placeholder="Mensaje (opcional)"></textarea>
+    <button type="submit" [disabled]="!formRef.form.valid || !archivoSeleccionado">
+      Enviar currículum
+    </button>
+  </form>
+
+  <div class="imagenes-inferiores">
+    <img src="/assets/img/img-camareros/camarera1.jpeg" alt="Equipo" />
+    <img src="/assets/img/img-camareros/camarero2.jpeg" alt="Ambiente" />
+  </div>
+</section>
+
+
+
+<!-- FOOTER -->
+<app-footer></app-footer>

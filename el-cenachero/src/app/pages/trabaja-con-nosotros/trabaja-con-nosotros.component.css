@@ -1,0 +1,270 @@
+/* === HERO === */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* ⚠️ Evita scroll horizontal por errores de ancho */
+}
+
+.trabaja-hero {
+  background-image: url('/assets/img/img-camareros/camarera.jpeg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+  padding: 80px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  flex-direction: column;
+  animation: fadeInHero 2s ease-in-out forwards;
+  opacity: 0;
+  filter: brightness(0);
+}
+
+@keyframes fadeInHero {
+  to {
+    opacity: 1;
+    filter: brightness(1);
+  }
+}
+
+.trabaja-hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.presentacion-texto {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeInText 2s ease-in-out 0.5s forwards;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+@keyframes fadeInText {
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.trabaja-hero h1 {
+  font-size: 3.5rem;
+  font-family: 'Allura', cursive;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
+
+.trabaja-hero p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+}
+
+/* === FORMULARIO SECCIÓN === */
+.formulario-trabaja {
+  width: 100vw;
+  max-width: 100%;
+  margin: 0;
+  padding: 60px 20px;
+  background-image: url('/assets/img/img-fondos/fondoTeatinos4.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+
+/* === IMÁGENES === */
+.imagenes-laterales {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.img-redonda {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.img-cuadrada {
+  width: 220px;
+  height: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* === FORMULARIO === */
+form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form h2 {
+  text-align: center;
+font-size: 3rem;
+  font-family: 'Alex Brush', cursive;  margin-bottom: 10px;
+  color: #1a1a1a;
+}
+
+form input,
+form textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #1a1a1a;
+  color: white;
+  border: none;
+  padding: 12px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background-color: #f1c40f;
+  color: black;
+}
+
+/* === IMÁGENES INFERIORES === */
+.imagenes-inferiores {
+  margin-top: 40px;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.imagenes-inferiores img {
+  width: 260px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* === RESPONSIVE MEDIA QUERIES === */
+@media (max-width: 1024px) {
+  .trabaja-hero h1 {
+    font-size: 3rem;
+  }
+
+  .trabaja-hero p {
+    font-size: 1.2rem;
+  }
+
+  .formulario-trabaja {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+
+  .img-redonda,
+  .img-cuadrada {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trabaja-hero {
+    padding: 60px 20px;
+  }
+
+  .trabaja-hero h1 {
+    font-size: 2.3rem;
+  }
+
+  .trabaja-hero p {
+    font-size: 1rem;
+  }
+
+  .formulario-trabaja {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagenes-laterales {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .img-redonda,
+  .img-cuadrada {
+    width: 140px;
+    height: 140px;
+  }
+
+  .imagenes-inferiores img {
+    width: 120px;
+    height: 120px;
+  }
+
+  form {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .trabaja-hero {
+    padding: 40px 15px;
+    background-position: center top;
+    background-size: cover;
+  }
+
+  .trabaja-hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+  }
+
+  .trabaja-hero p {
+    font-size: 1rem;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  .imagenes-inferiores {
+    gap: 30px;
+  }
+
+  .imagenes-inferiores img {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -3,7 +3,7 @@
 <!-- HERO -->
 <section class="hero-restaurante">
   <div class="hero-texto">
-    <h1>A MI MANERA</h1>
+    <h1>A Mi Manera</h1>
     <p>Vinos De Málaga</p>
   </div>
 </section>
@@ -36,7 +36,7 @@
         <button (click)="mostrarFormulario = !mostrarFormulario">
           {{ mostrarFormulario ? 'Ocultar formulario' : 'Reservar ahora' }}
         </button>
-        <a href="https://app.box.com/s/fnt26fuxuu47zczlblrnv9xk3g5olpds" target="_blank">
+        <a href="https://acrobat.adobe.com/id/urn:aaid:sc:EU:d368736a-cfaf-4718-9b77-07b6db73a4a0" target="_blank">
           <button type="button">CARTA</button>
         </a>
       </div>
@@ -70,20 +70,22 @@
         referrerpolicy="no-referrer-when-downgrade">
     </iframe>  </div>
 </section>
+
 <section class="historia-restaurante">
   <div class="historia-imagen">
-    <img src="assets/img/infoManera.jpg" alt="Foto del restaurante" />
+    <img [src]="imagenActual" alt="Foto del restaurante" />
   </div>
   <div class="historia-texto">
     <h2>La historia de A Mi Manera</h2>
     <p>
-      Fundado en 2018, A Mi Manera nace como una bodega malagueña con alma propia. Su esencia combina el sabor de la cocina tradicional con el encanto rústico de las tabernas de toda la vida. Aquí el vino dulce corre como la alegría, y cada rincón respira historia y autenticidad.
+      Fundado en 2018, A Mi Manera nace como una bodega malagueña con alma propia. Su esencia combina el sabor de la cocina tradicional con el encanto rústico de las tabernas de toda la vida.
     </p>
     <p>
-      Con un ambiente acogedor, mesas de madera, paredes vestidas de recuerdos y el compás del flamenco de fondo, este lugar no es solo para comer, sino para sentir. Ideal para reunirse, brindar, y dejarse llevar por el duende de Málaga, A Mi Manera es una experiencia para vivirla con los cinco sentidos.
+      Con un ambiente acogedor, mesas de madera, paredes vestidas de recuerdos y el compás del flamenco de fondo, este lugar no es solo para comer, sino para sentir.
     </p>
   </div>
 </section>
+
 
 <app-footer
   [facebookUrl]="'https://www.facebook.com/amimanerateatinos/'"

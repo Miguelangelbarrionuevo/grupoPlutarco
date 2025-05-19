@@ -62,4 +62,27 @@ export class RestauranteManeraComponent {
   scrollIzquierda() {
     this.carousel.nativeElement.scrollBy({ left: -200, behavior: 'smooth' });
   }
+
+ imagenes: string[] = [
+    'assets/img/img-amimanera/infoManera.jpg',
+        'assets/img/img-amimanera/manera1.jpeg',
+    'assets/img/img-amimanera/manera2.jpeg',
+    'assets/img/img-amimanera/manera3.jpeg',
+    'assets/img/img-amimanera/manera4.jpeg',
+
+  ];
+  imagenActual: string = this.imagenes[0];
+  private index = 0;
+  private intervalo: any;
+
+  ngOnInit(): void {
+    this.intervalo = setInterval(() => {
+      this.index = (this.index + 1) % this.imagenes.length;
+      this.imagenActual = this.imagenes[this.index];
+    }, 4000); 
+  }
+
+  ngOnDestroy(): void {
+    clearInterval(this.intervalo);
+  }
 }

@@ -288,3 +288,45 @@ color: #ffffff;
     height: 150px;
   }
 }
+
+  .historia-restaurante {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #fff8f0;
+  gap: 30px;
+}
+
+.historia-imagen {
+  flex: 1;
+  min-width: 300px;
+}
+
+.historia-imagen img {
+  width: 100%;
+  max-width: 600px;         /* Ancho máximo fijo */
+  height: 400px;            /* Alto fijo */
+  object-fit: cover;        /* Recorta y centra la imagen sin deformarla */
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease;
+}
+
+
+.historia-texto {
+  flex: 2;
+  min-width: 300px;
+}
+
+.historia-texto h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.historia-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}

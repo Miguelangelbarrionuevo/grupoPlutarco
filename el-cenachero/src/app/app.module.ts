@@ -13,6 +13,7 @@ import { RestauranteManeraComponent } from './pages/restaurante-manera/restauran
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
+import { TrabajaConNosotrosComponent } from './pages/trabaja-con-nosotros/trabaja-con-nosotros.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HttpClientModule } from '@angular/common/http';
     RestauranteCentroComponent,
     RestauranteManeraComponent,
     HomeComponent,
+    TrabajaConNosotrosComponent,
   ],
   imports: [
     BrowserModule,

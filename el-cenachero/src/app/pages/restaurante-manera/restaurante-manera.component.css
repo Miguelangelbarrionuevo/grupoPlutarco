@@ -10,6 +10,8 @@
   
   .hero-texto h1 {
     font-size: 3rem;
+          font-family: 'Allura', cursive;
+
     margin-bottom: 15px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   }
@@ -30,7 +32,8 @@
   }
   
   .platos-carousel h2 {
-    font-size: 2.2rem;
+   font-size: 4.2rem;
+      font-family: 'Allura', cursive;
     margin-bottom: 30px;
     color: #1a1a1a;
   }
@@ -52,6 +55,8 @@
     scrollbar-width: none;
   }
   
+  
+
   .carousel-container::-webkit-scrollbar {
     display: none;
   }
@@ -152,8 +157,8 @@
   }
   
   .reserva-texto h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+font-size: 4rem;
+  font-family: 'Alex Brush', cursive;    margin-bottom: 10px;
     text-align: center;
   }
   
@@ -297,9 +302,14 @@
 
 .historia-imagen img {
   width: 100%;
+  max-width: 600px;         /* Ancho máximo fijo */
+  height: 400px;            /* Alto fijo */
+  object-fit: cover;        /* Recorta y centra la imagen sin deformarla */
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease;
 }
+
 
 .historia-texto {
   flex: 2;

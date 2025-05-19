@@ -11,6 +11,8 @@
   .hero-texto h1 {
     color: rgb(255, 255, 255);
     font-size: 3rem;
+      font-family: 'Allura', cursive;
+
     margin-bottom: 15px;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   }
@@ -33,7 +35,9 @@
   }
   
   .platos-carousel h2 {
-    font-size: 2.2rem;
+  font-size: 4.2rem;
+      font-family: 'Allura', cursive;
+
     margin-bottom: 30px;
     color: #1a1a1a;
   }
@@ -155,8 +159,8 @@
   }
   
   .reserva-texto h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+font-size: 4rem;
+  font-family: 'Alex Brush', cursive;    margin-bottom: 10px;
     text-align: center;
   }
   
@@ -285,3 +289,44 @@
     }
   }
   
+  .historia-restaurante {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 60px 40px;
+  background-color: #fff8f0;
+  gap: 30px;
+}
+
+.historia-imagen {
+  flex: 1;
+  min-width: 300px;
+}
+
+.historia-imagen img {
+  width: 100%;
+  max-width: 600px;         /* Ancho máximo fijo */
+  height: 400px;            /* Alto fijo */
+  object-fit: cover;        /* Recorta y centra la imagen sin deformarla */
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.5s ease;
+}
+
+
+.historia-texto {
+  flex: 2;
+  min-width: 300px;
+}
+
+.historia-texto h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  font-family: 'Georgia', serif;
+}
+
+.historia-texto p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #333;
+}
