@@ -3,20 +3,20 @@
 <!-- HERO -->
 <section class="hero-restaurante">
   <div class="hero-texto">
-    <h1>Cenachero Teatinos</h1>
-    <p>Tradición y sabor andaluz en el corazón de Málaga</p>
+    <h1>{{ 'TEATINOS.HERO_TITLE' | translate }}</h1>
+    <p>{{ 'TEATINOS.HERO_SUBTITLE' | translate }}</p>
   </div>
 </section>
 
 <section class="platos-carousel">
-  <h2>Platos destacados</h2>
+  <h2>{{ 'TEATINOS.PLATOS_TITLE' | translate }}</h2>
   <div class="carousel-wrapper">
     <button class="flecha izquierda" (click)="scrollIzquierda()">‹</button>
-    
+
     <div class="carousel-container" #carousel>
       <div class="plato" *ngFor="let plato of platos">
         <img [src]="plato.imagen" alt="Plato destacado" />
-        <div class="overlay-nombre">{{ plato.nombre }}</div>
+        <div class="overlay-nombre">{{ plato.nombre | translate }}</div>
       </div>
     </div>
 
@@ -27,64 +27,55 @@
 <section class="reserva-mapa">
   <div class="columna-izquierda">
     <div class="reserva-texto">
-      <h2>¿Quieres reservar?</h2>
-      <p>Haz tu reserva para disfrutar de nuestros mejores mariscos en Teatinos.</p>
+      <h2>{{ 'TEATINOS.RESERVA_TITLE' | translate }}</h2>
+      <p>{{ 'TEATINOS.RESERVA_DESC' | translate }}</p>
 
       <div class="botones-acciones">
         <button (click)="mostrarFormulario = !mostrarFormulario">
-          {{ mostrarFormulario ? 'Ocultar formulario' : 'Reservar ahora' }}
+          {{ mostrarFormulario ? ('TEATINOS.HIDE_FORM' | translate) : ('TEATINOS.SHOW_FORM' | translate) }}
         </button>
         <a href="https://app.box.com/s/fnt26fuxuu47zczlblrnv9xk3g5olpds" target="_blank">
-          <button type="button">CARTA</button>
+          <button type="button">{{ 'TEATINOS.MENU' | translate }}</button>
         </a>
       </div>
 
       <div class="info-contacto">
-        <p><strong>📍 Dirección:</strong> Av. Plutarco, 20, Puerto de la Torre, 29010 Málaga</p>
-        <p><strong>📞 Teléfono:</strong> <a href="tel:952068444"> 952 06 84 44</a></p>
+        <p><strong>📍 {{ 'TEATINOS.ADDRESS_LABEL' | translate }}:</strong> {{ 'TEATINOS.ADDRESS' | translate }}</p>
+        <p><strong>📞 {{ 'TEATINOS.PHONE_LABEL' | translate }}:</strong> <a href="tel:952068444">952 06 84 44</a></p>
       </div>
     </div>
 
     <form *ngIf="mostrarFormulario" (ngSubmit)="enviarReserva()" #reservaForm="ngForm" novalidate class="formulario-reserva">
-      <input type="text" name="nombre" [(ngModel)]="reserva.nombre" placeholder="Tu nombre" required />
-      <input type="email" name="correo" [(ngModel)]="reserva.correo" placeholder="Tu correo" required />
-      <input type="tel" name="telefono" [(ngModel)]="reserva.telefono" placeholder="Tu teléfono" required />
+      <input type="text" name="nombre" [(ngModel)]="reserva.nombre" [placeholder]="'FORM.NAME' | translate" required />
+      <input type="email" name="correo" [(ngModel)]="reserva.correo" [placeholder]="'FORM.EMAIL' | translate" required />
+      <input type="tel" name="telefono" [(ngModel)]="reserva.telefono" [placeholder]="'FORM.PHONE' | translate" required />
       <input type="date" name="fecha" [(ngModel)]="reserva.fecha" required />
       <input type="time" name="hora" [(ngModel)]="reserva.hora" required />
-      <input type="number" name="comensales" [(ngModel)]="reserva.comensales" placeholder="Nº comensales" required />
-      <textarea name="mensaje_opcional" [(ngModel)]="reserva.mensaje_opcional" placeholder="Mensaje (opcional)"></textarea>
-      <button type="submit" [disabled]="reservaForm.invalid">Enviar reserva</button>
+      <input type="number" name="comensales" [(ngModel)]="reserva.comensales" [placeholder]="'FORM.GUESTS' | translate" required />
+      <textarea name="mensaje_opcional" [(ngModel)]="reserva.mensaje_opcional" [placeholder]="'FORM.MESSAGE' | translate"></textarea>
+      <button type="submit" [disabled]="reservaForm.invalid">{{ 'FORM.SUBMIT' | translate }}</button>
     </form>
   </div>
 
   <div class="mapa-google">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3198.057931307957!2d-4.4778075!3d36.72116990000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f735a301de8d%3A0xb8c655ed640101ae!2sEl%20Cenachero!5e0!3m2!1ses!2ses!4v1745482771278!5m2!1ses!2ses"
-    width="500"
-     height="300"
-       allowfullscreen=""
-       loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-    </iframe>  </div>
+    <iframe src="https://www.google.com/maps/embed?pb=...&hl=es"
+      width="500" height="300"
+      allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
 </section>
 
 <section class="historia-restaurante">
   <div class="historia-imagen">
-    <img [src]="imagenActual" alt="Foto del restaurante El Cenachero" />
+    <img [src]="imagenActual" alt="{{ 'TEATINOS.HISTORIA_ALT' | translate }}" />
   </div>
   <div class="historia-texto">
-    <h2>La historia de El Cenachero</h2>
-    <p>
-      Fundado en 2004, <strong>Marisquería El Cenachero</strong> se ha convertido en un auténtico referente gastronómico en el barrio de Teatinos, Málaga. Más que un restaurante, El Cenachero es una declaración de amor por el mar, el producto fresco y el respeto al cliente.
-    </p>
-    <p>
-      Aquí, la tradición y la calidad van de la mano. Cada plato está pensado para realzar el sabor del marisco y el pescado, cuidando hasta el más mínimo detalle en su presentación y elaboración. La cercanía en el trato, el ambiente familiar y un servicio atento hacen que cada visita se convierta en una experiencia memorable.
-    </p>
-    <p>
-      En El Cenachero, <strong>el protagonista siempre es el cliente... y el producto.</strong> Porque entendemos que el éxito nace del compromiso con quienes nos eligen y del cariño que ponemos en cada servicio.
-    </p>
+    <h2>{{ 'TEATINOS.HISTORIA_TITLE' | translate }}</h2>
+    <p>{{ 'TEATINOS.HISTORIA_P1' | translate }}</p>
+    <p>{{ 'TEATINOS.HISTORIA_P2' | translate }}</p>
+    <p>{{ 'TEATINOS.HISTORIA_P3' | translate }}</p>
   </div>
 </section>
-
-
 
 <app-footer></app-footer>

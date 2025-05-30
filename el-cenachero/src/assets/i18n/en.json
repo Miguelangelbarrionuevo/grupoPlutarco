@@ -1,0 +1,135 @@
+{
+    "NAVBAR": {
+    "RESTAURANTS": "Restaurants",
+    "TEATINOS": "Cenachero Teatinos",
+    "CENTRO": "Cenachero Centro",
+    "MANERA": "My Way",
+    "WORK": "Work with us"
+  },
+  "HOME": {
+    "HERO_TEXT": "The taste of the sea in every dish",
+    "ABOUT_OWNER": "Our founder has dedicated his life to seafood cuisine..."
+  },
+  "FOOTER": {
+     "PRIVACY": "Privacy Policy",
+    "LEGAL": "Legal Notice"
+  },
+  
+  "CATERING": {
+    "TITLE": "Catering Service",
+    "PARAGRAPH_1": "At <strong>El Cenachero</strong> we offer an exclusive catering service tailored for any type of event, from weddings and communions to business meetings or private celebrations. Our kitchen and customer service team work personally to make every occasion unique and special.",
+    "PARAGRAPH_2": "Trust us to turn your important moments into <strong>unforgettable experiences</strong>. Contact us and discover how we can help you impress your guests.",
+    "CONTACT": "Feel free to get in touch"
+  },
+   "OWNER": {
+    "TITLE": "About the Owner",
+    "DESCRIPTION": "Oscar Diaz Rueda, a businessman from Málaga with decades of experience in the hospitality industry, has driven the growth of three renowned restaurants in the province. His passion for gastronomy and close customer relationships have made him a reference in the sector."
+  },
+   "VIDEOS": {
+    "TEATINOS": "El Cenachero Teatinos Seafood Restaurant",
+    "MANERA": "My Way",
+    "CENTRO": "El Cenachero Centro Seafood Restaurant",
+    "BUTTON": "Book now"
+  },
+    "CENTRO": {
+    "HERO_TITLE": "El Cenachero Seafood Restaurant - Centro",
+    "HERO_SUBTITLE": "Tradition and Andalusian flavor in the heart of Málaga",
+    "PLATOS_TITLE": "Featured Dishes",
+    "RESERVA_TITLE": "Want to book?",
+    "RESERVA_DESC": "Book now to enjoy our best seafood in downtown Málaga.",
+    "SHOW_FORM": "Book now",
+    "HIDE_FORM": "Hide form",
+    "MENU": "MENU",
+    "ADDRESS_LABEL": "Address",
+    "ADDRESS": "Calle Compañía, 16, Distrito Centro, 29008 Málaga",
+    "PHONE_LABEL": "Phone",
+    "HISTORIA_TITLE": "The Story of El Cenachero Centro",
+    "HISTORIA_ALT": "Photo of El Cenachero Centro restaurant",
+    "HISTORIA_P1": "Founded in 2020 during the pandemic, El Cenachero Centro was born as a brave project with the purpose of bringing the best of the sea to Málaga's most iconic area.",
+    "HISTORIA_P2": "Despite the difficult times, this culinary spot has established itself thanks to its essence: quality products, traditional Andalusian cuisine, and a warm, welcoming service.",
+    "HISTORIA_P3": "Located in a three-story building, it offers spacious, elegant areas and a private room perfect for intimate dinners or special celebrations. Its charm lies not only in what is served but in the ambiance felt when you step inside.",
+    "HISTORIA_P4": "Today, El Cenachero Centro represents not just resilience and craftsmanship, but also the ability to reinvent without losing identity."
+  },
+  "FORM": {
+    "NAME": "Your name",
+    "EMAIL": "Your email",
+    "PHONE": "Your phone",
+    "GUESTS": "Number of guests",
+    "MESSAGE": "Message (optional)",
+    "SUBMIT": "Send reservation"
+  },
+  "PLATOS": {
+    "BOGAVANTE": "Lobster",
+  "CARABINEROS": "Scarlet Prawns",
+  "FIDEOS": "Toasted Noodles",
+  "QUISQUILLAS": "Grilled Shrimps",
+  "OSTRAS": "Oysters",
+  "ATUN": "Tuna Toast",
+  "GAZPACHUELO": "Gazpachuelo Soup",
+  "ZAMBURILLAS": "Scallops",
+  "FRITURA": "Fried Fish Platter",
+  "GAMBAS": "Boiled Prawns",
+  "MATRIMONIO": "Anchovy Duo",
+  "CONCHAS": "Fine Clams",
+  "PULPO": "Galician-style Octopus",
+  "PEREGRINA": "Gratinated Scallop"
+  },
+  "TEATINOS": {
+  "HERO_TITLE": "Cenachero Teatinos",
+  "HERO_SUBTITLE": "Tradition and Andalusian flavor in the heart of Málaga",
+  "PLATOS_TITLE": "Featured Dishes",
+  "RESERVA_TITLE": "Want to book?",
+  "RESERVA_DESC": "Make your reservation and enjoy our best seafood in Teatinos.",
+  "SHOW_FORM": "Book now",
+  "HIDE_FORM": "Hide form",
+  "MENU": "MENU",
+  "ADDRESS_LABEL": "Address",
+  "ADDRESS": "Av. Plutarco, 20, Puerto de la Torre, 29010 Málaga",
+  "PHONE_LABEL": "Phone",
+  "HISTORIA_TITLE": "The story of El Cenachero",
+  "HISTORIA_ALT": "Photo of El Cenachero restaurant",
+  "HISTORIA_P1": "Founded in 2004, El Cenachero Seafood Restaurant has become a true culinary reference in the Teatinos neighborhood of Málaga.",
+  "HISTORIA_P2": "Here, tradition and quality go hand in hand. Every dish is designed to enhance the flavor of seafood and fish, with attention to every detail in its preparation and presentation.",
+  "HISTORIA_P3": "At El Cenachero, the main stars are always the customers... and the ingredients. Because we believe that success comes from our commitment to those who choose us and the love we put into every service."
+},
+"MANERA": {
+  "TITULO": "A Mi Manera",
+  "SUBTITULO": "A unique spot to enjoy with your loved ones",
+  "PLATOS_DESTACADOS": "Featured dishes",
+  "RESERVAR_TITULO": "Book your table",
+  "RESERVAR_TEXTO": "Fill out the form below to reserve at our restaurant.",
+  "BOTON_RESERVAR": "Book",
+  "BOTON_OCULTAR": "Hide form",
+  "BOTON_CARTA": "View menu",
+  "DIRECCION": "📍 Address: Calle Andrómeda, 19, Teatinos",
+  "TELEFONO": "📞 Phone: 623 58 99 61",
+  "HISTORIA_TITULO": "Our story",
+  "HISTORIA_ALT": "Image of A Mi Manera restaurant",
+  "HISTORIA_TEXTO1": "From the beginning, we've strived to offer homemade food with a special touch.",
+  "HISTORIA_TEXTO2": "Our passion for cooking and a family-friendly approach has made us a local favorite.",
+  "PLATO_FLAMENQUIN": "Flamenquín",
+  "PLATO_JAMON_ASADO": "Roast ham",
+  "PLATO_CROQUETAS": "Homemade croquettes",
+  "PLATO_CACHOPO": "Stuffed cachopo",
+  "PLATO_MONTES": "Montes of Málaga",
+  "PLATO_PINCHO": "Shrimp skewer",
+  "PLATO_BERENJENAS": "Eggplant with honey",
+  "ENVIAR": "Send reservation"
+},
+"TRABAJA": {
+  "HERO_TITULO": "Work with us",
+  "HERO_TEXTO": "Do you want to be part of our team?<br>We are looking for people passionate about hospitality. Send us your CV!",
+  "FORM_TITULO": "Send us your application",
+  "FORM_SUBTITULO": "Fill in the fields below and attach your PDF resume",
+  "INPUT_NOMBRE": "First Name",
+  "INPUT_APELLIDOS": "Last Name",
+  "INPUT_CORREO": "Email",
+  "INPUT_MENSAJE": "Message (optional)",
+  "BOTON_ENVIAR": "Submit application",
+  "IMG1_ALT": "Waitress serving",
+  "IMG2_ALT": "Attentive waiter"
+}
+
+}
+
+

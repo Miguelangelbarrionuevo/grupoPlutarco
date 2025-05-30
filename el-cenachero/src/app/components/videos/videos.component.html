@@ -1,11 +1,11 @@
 <section class="videos-section">
-    <div class="video-container" *ngFor="let video of videos">
-      <div class="video-wrapper">
-        <video #videoPlayer [src]="video.url" autoplay muted loop playsinline></video>
-        <div class="overlay">
-          <h3>{{ video.nombre }}</h3>
-          <button [routerLink]="video.ruta">Reservar</button>
-        </div>
+  <div class="video-container" *ngFor="let video of videos">
+    <div class="video-wrapper">
+      <video #videoPlayer [src]="video.url" autoplay muted loop playsinline></video>
+      <div class="overlay">
+        <h3>{{ video.nombre | translate }}</h3>
+        <button [routerLink]="video.ruta">{{ 'VIDEOS.BUTTON' | translate }}</button>
       </div>
     </div>
-  </section>
+  </div>
+</section>

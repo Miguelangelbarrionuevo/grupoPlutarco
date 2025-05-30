@@ -11,17 +11,44 @@
     <nav class="nav" [class.active]="menuOpen">
       <ul>
         <li class="dropdown">
-          <a href="#">Restaurantes</a>
+          <a href="#">{{ 'NAVBAR.RESTAURANTS' | translate }}</a>
           <div class="dropdown-content">
-            <a routerLink="/restaurante-teatinos">Cenachero Teatinos</a>
-            <a routerLink="/restaurante-centro">Cenachero Centro</a>
-            <a routerLink="/restaurante-manera">A Mi Manera</a>
+            <a routerLink="/restaurante-teatinos">{{ 'NAVBAR.TEATINOS' | translate }}</a>
+            <a routerLink="/restaurante-centro">{{ 'NAVBAR.CENTRO' | translate }}</a>
+            <a routerLink="/restaurante-manera">{{ 'NAVBAR.MANERA' | translate }}</a>
           </div>
         </li>
-        <li><a routerLink="/trabaja-con-nosotros">Trabaja con nosotros</a></li>
-        <li><a href="#">ES | ENG</a></li>
+        <li><a routerLink="/trabaja-con-nosotros">{{ 'NAVBAR.WORK' | translate }}</a></li>
+        <li>
+          <div class="language-switch-icons">
+            <button (click)="cambiarIdioma('es')" aria-label="Español">
+              <svg width="24" height="16" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
+                <rect width="3" height="2" fill="#AA151B"/>
+                <rect y="0.5" width="3" height="1" fill="#F1BF00"/>
+              </svg>
+            </button>
+            <button (click)="cambiarIdioma('en')" aria-label="English">
+              <svg width="24" height="16" viewBox="0 0 60 30" xmlns="http://www.w3.org/2000/svg">
+                <clipPath id="t"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+                <g clip-path="url(#t)">
+                  <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                  <path d="M0,0 L60,30 M60,0 L0,30" stroke="#FFF" stroke-width="6"/>
+                  <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="4"/>
+                  <path d="M30,0 v30 M0,15 h60" stroke="#FFF" stroke-width="10"/>
+                  <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" stroke-width="6"/>
+                </g>
+              </svg>
+            </button>
+            <button (click)="cambiarIdioma('fr')" aria-label="Français">
+              <svg width="24" height="16" viewBox="0 0 3 2" xmlns="http://www.w3.org/2000/svg">
+                <rect width="1" height="2" x="0" fill="#0055A4"/>
+                <rect width="1" height="2" x="1" fill="#FFFFFF"/>
+                <rect width="1" height="2" x="2" fill="#EF4135"/>
+              </svg>
+            </button>
+          </div>
+        </li>
       </ul>
     </nav>
   </div>
 </header>
-

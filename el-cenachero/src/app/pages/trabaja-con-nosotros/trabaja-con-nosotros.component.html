@@ -2,35 +2,31 @@
 
 <section class="trabaja-hero">
   <div class="presentacion-texto">
-    <h1>¡Alcanza tus sueños con nosotros!</h1>
-    <p>
-      Impulsa tu carrera profesional en el mundo de la hostelería. En <i>El Cenachero</i>  buscamos personas con pasión por el servicio, el trato cercano y la excelencia gastronómica.
-    </p>
+    <h1>{{ 'TRABAJA.HERO_TITULO' | translate }}</h1>
+    <p [innerHTML]="'TRABAJA.HERO_TEXTO' | translate"></p>
   </div>
 </section>
 
 <section class="formulario-trabaja centrado">
   <form (ngSubmit)="enviarSolicitud()" #formRef="ngForm" enctype="multipart/form-data" novalidate>
-    <h2>¿Quieres formar parte del equipo?</h2>
-    <p class="subtitulo-formulario">Déjanos tu currículum y únete a la experiencia de el grupo El Cenachero.</p>
+    <h2>{{ 'TRABAJA.FORM_TITULO' | translate }}</h2>
+    <p class="subtitulo-formulario">{{ 'TRABAJA.FORM_SUBTITULO' | translate }}</p>
 
-    <input type="text" name="nombre" [(ngModel)]="form.nombre" required placeholder="Nombre" />
-    <input type="text" name="apellidos" [(ngModel)]="form.apellidos" required placeholder="Apellidos" />
-    <input type="email" name="correo" [(ngModel)]="form.correo" required placeholder="Correo electrónico" />
+    <input type="text" name="nombre" [(ngModel)]="form.nombre" required [placeholder]="'TRABAJA.INPUT_NOMBRE' | translate" />
+    <input type="text" name="apellidos" [(ngModel)]="form.apellidos" required [placeholder]="'TRABAJA.INPUT_APELLIDOS' | translate" />
+    <input type="email" name="correo" [(ngModel)]="form.correo" required [placeholder]="'TRABAJA.INPUT_CORREO' | translate" />
     <input type="file" (change)="onFileSelected($event)" accept="application/pdf" required />
-    <textarea name="mensaje" [(ngModel)]="form.mensaje" placeholder="Mensaje (opcional)"></textarea>
+    <textarea name="mensaje" [(ngModel)]="form.mensaje" [placeholder]="'TRABAJA.INPUT_MENSAJE' | translate"></textarea>
+    
     <button type="submit" [disabled]="!formRef.form.valid || !archivoSeleccionado">
-      Enviar currículum
+      {{ 'TRABAJA.BOTON_ENVIAR' | translate }}
     </button>
   </form>
 
   <div class="imagenes-inferiores">
-    <img src="/assets/img/img-camareros/camarera1.jpeg" alt="Equipo" />
-    <img src="/assets/img/img-camareros/camarero2.jpeg" alt="Ambiente" />
+    <img src="/assets/img/img-camareros/camarera1.jpeg" [alt]="'TRABAJA.IMG1_ALT' | translate" />
+    <img src="/assets/img/img-camareros/camarero2.jpeg" [alt]="'TRABAJA.IMG2_ALT' | translate" />
   </div>
 </section>
 
-
-
-<!-- FOOTER -->
 <app-footer></app-footer>

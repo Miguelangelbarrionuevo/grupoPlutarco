@@ -12,10 +12,17 @@ import { RestauranteCentroComponent } from './pages/restaurante-centro/restauran
 import { RestauranteManeraComponent } from './pages/restaurante-manera/restaurante-manera.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './pages/home/home.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TrabajaConNosotrosComponent } from './pages/trabaja-con-nosotros/trabaja-con-nosotros.component';
 import { AdminLoginComponent } from './pages/admin-login/admin-login.component';
 import { AdminReservasComponent } from './pages/admin-reservas/admin-reservas.component';
+
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -37,8 +44,15 @@ import { AdminReservasComponent } from './pages/admin-reservas/admin-reservas.co
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    HttpClientModule ,
-    
+    HttpClientModule,
+  TranslateModule.forRoot({
+  defaultLanguage: 'es',
+  loader: {
+    provide: TranslateLoader,
+    useFactory: HttpLoaderFactory,
+    deps: [HttpClient]
+  }
+})
   ],
   providers: [],
   bootstrap: [AppComponent]

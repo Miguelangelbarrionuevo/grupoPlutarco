@@ -9,17 +9,17 @@ import { Component, ElementRef, QueryList, ViewChildren, AfterViewInit } from '@
 export class VideosComponent implements AfterViewInit {
   videos = [
     {
-      nombre: 'Marisquería El Cenachero Teatinos',
+      nombre: 'VIDEOS.TEATINOS',
       url: 'assets/video/videoentradaTeatinos.mp4',
       ruta: '/restaurante-teatinos'
     },
     {
-      nombre: 'A Mi Manera',
+      nombre: 'VIDEOS.MANERA',
       url: 'assets/video/video-entrada-amimanera.mp4',
       ruta: '/restaurante-manera'
     },
     {
-      nombre: 'Marisquería El Cenachero Centro',
+      nombre: 'VIDEOS.CENTRO',
       url: 'assets/video/videoentradacentro.mp4',
       ruta: '/restaurante-centro'
     }
@@ -37,13 +37,12 @@ export class VideosComponent implements AfterViewInit {
       player.nativeElement.onloadeddata = () => {
         loaded++;
         if (loaded === players.length) {
-          // Todos los vídeos están listos, ahora iniciar juntos
           setTimeout(() => {
             players.forEach(p => {
               p.nativeElement.currentTime = 0;
               p.nativeElement.play();
             });
-          }, 300); 
+          }, 300);
         }
       };
     });

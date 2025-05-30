@@ -1,0 +1,136 @@
+{
+  "NAVBAR": {
+    "RESTAURANTS": "Restaurants",
+    "TEATINOS": "Cenachero Teatinos",
+    "CENTRO": "Cenachero Centre",
+    "MANERA": "À ma manière",
+    "WORK": "Travaillez avec nous"
+  },
+  "HOME": {
+    "HERO_TEXT": "Le goût de la mer dans chaque plat",
+    "ABOUT_OWNER": "Notre fondateur a consacré sa vie à la cuisine marine..."
+  },
+  "FOOTER": {
+     "PRIVACY": "Politique de confidentialité",
+    "LEGAL": "Mentions légales"
+  },
+  
+  "CATERING": {
+    "TITLE": "Service de Traiteur",
+    "PARAGRAPH_1": "Chez <strong>El Cenachero</strong>, nous proposons un service de traiteur exclusif adapté à tout type d'événement, des mariages et communions aux réunions d'affaires ou célébrations privées. Notre équipe de cuisine et de service client travaille de manière personnalisée pour que chaque occasion soit unique et spéciale.",
+    "PARAGRAPH_2": "Faites-nous confiance pour transformer vos moments importants en <strong>expériences inoubliables</strong>. Contactez-nous et découvrez comment nous pouvons vous aider à surprendre vos invités.",
+    "CONTACT": "N'hésitez pas à nous contacter"
+  },
+   "OWNER": {
+    "TITLE": "À propos du propriétaire",
+    "DESCRIPTION": "Oscar Diaz Rueda, entrepreneur malaguène avec des décennies d'expérience dans le secteur de l'hôtellerie, a lancé trois restaurants de référence dans la province. Sa passion pour la gastronomie et son approche chaleureuse en ont fait une figure incontournable du secteur."
+  },
+   "VIDEOS": {
+    "TEATINOS": "Marisquería El Cenachero Teatinos",
+    "MANERA": "À ma manière",
+    "CENTRO": "Marisquería El Cenachero Centre",
+    "BUTTON": "Réserver"
+  },
+   "CENTRO": {
+    "HERO_TITLE": "Marisquería El Cenachero - Centre",
+    "HERO_SUBTITLE": "Tradition et saveur andalouse au cœur de Málaga",
+    "PLATOS_TITLE": "Plats vedettes",
+    "RESERVA_TITLE": "Vous souhaitez réserver ?",
+    "RESERVA_DESC": "Réservez pour profiter de nos meilleurs fruits de mer au centre de Málaga.",
+    "SHOW_FORM": "Réserver maintenant",
+    "HIDE_FORM": "Masquer le formulaire",
+    "MENU": "MENU",
+    "ADDRESS_LABEL": "Adresse",
+    "ADDRESS": "Calle Compañía, 16, Distrito Centro, 29008 Málaga",
+    "PHONE_LABEL": "Téléphone",
+    "HISTORIA_TITLE": "L’histoire de El Cenachero Centro",
+    "HISTORIA_ALT": "Photo du restaurant El Cenachero Centro",
+    "HISTORIA_P1": "Fondée en 2020, en pleine pandémie, la Marisquería El Cenachero Centro est née comme un projet courageux visant à rapprocher les meilleurs produits de la mer du centre emblématique de Málaga.",
+    "HISTORIA_P2": "Malgré les temps difficiles, ce lieu gastronomique s'est imposé grâce à son essence : des produits de qualité, une cuisine andalouse traditionnelle et un accueil chaleureux.",
+    "HISTORIA_P3": "Situé dans un immeuble de trois étages, il dispose d'espaces spacieux et élégants ainsi que d’un espace privé idéal pour des dîners intimes ou des célébrations spéciales. Son charme réside autant dans l’ambiance que dans l’assiette.",
+    "HISTORIA_P4": "Aujourd'hui, El Cenachero Centro représente non seulement la résilience et le savoir-faire, mais aussi la capacité à se réinventer sans perdre son identité."
+  },
+  "FORM": {
+    "NAME": "Votre nom",
+    "EMAIL": "Votre e-mail",
+    "PHONE": "Votre téléphone",
+    "GUESTS": "Nombre de convives",
+    "MESSAGE": "Message (facultatif)",
+    "SUBMIT": "Envoyer la réservation"
+  },
+  "PLATOS": {
+   "BOGAVANTE": "Homard",
+  "CARABINEROS": "Crevettes royales",
+  "FIDEOS": "Nouilles grillées",
+  "QUISQUILLAS": "Crevettes grillées",
+  "OSTRAS": "Huîtres",
+  "ATUN": "Toast au thon",
+  "GAZPACHUELO": "Soupe gazpachuelo",
+  "ZAMBURILLAS": "Pétoncles",
+  "FRITURA": "Assortiment frit",
+  "GAMBAS": "Crevettes bouillies",
+  "MATRIMONIO": "Duo d'anchois",
+  "CONCHAS": "Palourdes fines",
+  "PULPO": "Poulpe à la galicienne",
+  "PEREGRINA": "Pétoncle gratiné"
+  },
+  "TEATINOS": {
+  "HERO_TITLE": "Cenachero Teatinos",
+  "HERO_SUBTITLE": "Tradition et saveur andalouse au cœur de Málaga",
+  "PLATOS_TITLE": "Plats vedettes",
+  "RESERVA_TITLE": "Vous souhaitez réserver ?",
+  "RESERVA_DESC": "Réservez pour déguster nos meilleurs fruits de mer à Teatinos.",
+  "SHOW_FORM": "Réserver maintenant",
+  "HIDE_FORM": "Masquer le formulaire",
+  "MENU": "MENU",
+  "ADDRESS_LABEL": "Adresse",
+  "ADDRESS": "Av. Plutarco, 20, Puerto de la Torre, 29010 Málaga",
+  "PHONE_LABEL": "Téléphone",
+  "HISTORIA_TITLE": "L’histoire de El Cenachero",
+  "HISTORIA_ALT": "Photo du restaurant El Cenachero",
+  "HISTORIA_P1": "Fondé en 2004, le restaurant El Cenachero est devenu une véritable référence gastronomique dans le quartier de Teatinos à Málaga.",
+  "HISTORIA_P2": "Ici, la tradition et la qualité vont de pair. Chaque plat est conçu pour mettre en valeur les saveurs des fruits de mer et du poisson, avec un soin particulier apporté à leur préparation et à leur présentation.",
+  "HISTORIA_P3": "Chez El Cenachero, les véritables vedettes sont toujours le client… et le produit. Car nous croyons que le succès naît de l’engagement envers ceux qui nous choisissent et de l’amour que nous mettons dans chaque service."
+},
+"MANERA": {
+  "TITULO": "A Mi Manera",
+  "SUBTITULO": "Un endroit unique pour profiter avec vos proches",
+  "PLATOS_DESTACADOS": "Plats en vedette",
+  "RESERVAR_TITULO": "Réservez votre table",
+  "RESERVAR_TEXTO": "Remplissez le formulaire ci-dessous pour réserver dans notre restaurant.",
+  "BOTON_RESERVAR": "Réserver",
+  "BOTON_OCULTAR": "Masquer le formulaire",
+  "BOTON_CARTA": "Voir la carte",
+  "DIRECCION": "📍 Adresse : Calle Andrómeda, 19, Teatinos",
+  "TELEFONO": "📞 Téléphone : 623 58 99 61",
+  "HISTORIA_TITULO": "Notre histoire",
+  "HISTORIA_ALT": "Image du restaurant A Mi Manera",
+  "HISTORIA_TEXTO1": "Depuis nos débuts, nous nous efforçons d'offrir une cuisine maison avec une touche spéciale.",
+  "HISTORIA_TEXTO2": "Notre passion pour la cuisine et notre ambiance familiale nous ont rendus populaires dans la région.",
+  "PLATO_FLAMENQUIN": "Flamenquín",
+  "PLATO_JAMON_ASADO": "Jambon rôti",
+  "PLATO_CROQUETAS": "Croquettes maison",
+  "PLATO_CACHOPO": "Cachopo farci",
+  "PLATO_MONTES": "Montes de Málaga",
+  "PLATO_PINCHO": "Brochette de crevettes",
+  "PLATO_BERENJENAS": "Aubergines au miel",
+  "ENVIAR": "Envoyer la réservation"
+}
+,
+ "TRABAJA": {
+  "HERO_TITULO": "Travaille avec nous",
+  "HERO_TEXTO": "Souhaitez-vous faire partie de notre équipe ?<br>Nous recherchons des personnes passionnées par l'hôtellerie. Envoyez-nous votre CV !",
+  "FORM_TITULO": "Envoyez-nous votre candidature",
+  "FORM_SUBTITULO": "Remplissez les champs ci-dessous et joignez votre CV au format PDF",
+  "INPUT_NOMBRE": "Prénom",
+  "INPUT_APELLIDOS": "Nom",
+  "INPUT_CORREO": "E-mail",
+  "INPUT_MENSAJE": "Message (optionnel)",
+  "BOTON_ENVIAR": "Envoyer la candidature",
+  "IMG1_ALT": "Serveuse en service",
+  "IMG2_ALT": "Serveur attentif"
+}
+
+}
+
+

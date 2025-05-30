@@ -21,7 +21,7 @@
     font-size: 4.4rem;
     margin-bottom: 30px;
     color: #1a1a1a;
-    font-family: 'Alex Brush', cursive;
+  font-family: 'Alex Brush', cursive !important;
 
   }
   
@@ -48,7 +48,18 @@
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     transition: opacity 0.5s;
   }
-  
+  .imagen-principal,
+.imagen-secundaria {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Efecto al pasar el ratón */
+.imagen-principal:hover,
+.imagen-secundaria:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
   .imagen-secundaria {
     width: 120px;
     position: absolute;
@@ -64,7 +75,14 @@
     
   }
   
-  
+  @media (hover: hover) and (pointer: fine) {
+  .imagen-principal:hover,
+  .imagen-secundaria:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+}
+
   @media (max-width: 768px) {
     .catering {
       flex-direction: column;
@@ -76,4 +94,3 @@
       margin-top: 30px;
     }
   }
-  

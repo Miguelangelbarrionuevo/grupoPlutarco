@@ -12,16 +12,17 @@ export class RestauranteCentroComponent {
 
   @ViewChild('carousel', { static: false }) carousel!: ElementRef;
 
-  platos = [
-    { imagen: '/assets/img/img-platos/bogavante.jpeg', nombre: 'Bogavante' },
-    { imagen: '/assets/img/img-platos/carabinero.jpeg', nombre: 'Carabineros' },
-    { imagen: '/assets/img/img-platos/fideostostados.jpeg', nombre: 'Fideos Tostados ' },
-    { imagen: '/assets/img/img-platos/quisquillas.jpeg', nombre: 'Quisquillas Plancha' },
-    { imagen: '/assets/img/img-platos/ostras2.jpeg', nombre: 'Ostras' },
-    { imagen: '/assets/img/img-platos/tostaatun2.jpeg', nombre: 'Tosta De Atun' },
-    { imagen: '/assets/img/img-platos/gazpachuelo.jpeg', nombre: 'Gazpachuelo' },
-    { imagen: '/assets/img/img-platos/zamburillas.jpeg', nombre: 'Zamburillas ' }
-  ];
+platos = [
+  { imagen: '/assets/img/img-platos/bogavante.jpeg', nombre: 'PLATOS.BOGAVANTE' },
+  { imagen: '/assets/img/img-platos/carabinero.jpeg', nombre: 'PLATOS.CARABINEROS' },
+  { imagen: '/assets/img/img-platos/fideostostados.jpeg', nombre: 'PLATOS.FIDEOS' },
+  { imagen: '/assets/img/img-platos/quisquillas.jpeg', nombre: 'PLATOS.QUISQUILLAS' },
+  { imagen: '/assets/img/img-platos/ostras2.jpeg', nombre: 'PLATOS.OSTRAS' },
+  { imagen: '/assets/img/img-platos/tostaatun2.jpeg', nombre: 'PLATOS.ATUN' },
+  { imagen: '/assets/img/img-platos/gazpachuelo.jpeg', nombre: 'PLATOS.GAZPACHUELO' },
+  { imagen: '/assets/img/img-platos/zamburillas.jpeg', nombre: 'PLATOS.ZAMBURILLAS' }
+];
+
   
 
   reserva = {

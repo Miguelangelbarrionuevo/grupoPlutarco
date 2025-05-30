@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,18 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   menuOpen = false;
 
+  constructor(private translate: TranslateService) {
+    const lang = localStorage.getItem('lang') || 'es';
+    this.translate.setDefaultLang(lang);
+    this.translate.use(lang);
+  }
+
   toggleMenu() {
     this.menuOpen = !this.menuOpen;
+  }
+
+  cambiarIdioma(lang: string) {
+    this.translate.use(lang);
+    localStorage.setItem('lang', lang);
   }
 }

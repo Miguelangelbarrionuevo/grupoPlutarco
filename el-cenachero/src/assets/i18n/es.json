@@ -1,0 +1,139 @@
+{
+  
+  "NAVBAR": {
+    "RESTAURANTS": "Restaurantes",
+    "TEATINOS": "Cenachero Teatinos",
+    "CENTRO": "Cenachero Centro",
+    "MANERA": "A Mi Manera",
+    "WORK": "Trabaja con nosotros"
+  },
+  "HOME": {
+    "HERO_TEXT": "El sabor del mar en cada plato",
+    "ABOUT_OWNER": "Nuestro fundador ha dedicado su vida a la cocina marinera..."
+  },
+  "FOOTER": {
+     "PRIVACY": "Política de privacidad",
+    "LEGAL": "Aviso legal"
+ 
+},
+"CATERING": {
+    "TITLE": "Servicio de Catering",
+    "PARAGRAPH_1": "En <strong>El Cenachero</strong> ofrecemos un exclusivo servicio de catering diseñado para adaptarse a cualquier tipo de evento, desde bodas y comuniones hasta reuniones de empresa o celebraciones privadas. Nuestro equipo de cocina y atención al cliente trabaja de forma personalizada para que cada ocasión sea única y especial.",
+    "PARAGRAPH_2": "Confía en nosotros para transformar tus momentos importantes en <strong>experiencias inolvidables</strong>.Contacta con nosotros y descubre cómo podemos ayudarte a sorprender a tus invitados.",
+    "CONTACT": "No dudes en ponerte en contacto"
+  },
+   "OWNER": {
+    "TITLE": "Sobre el propietario",
+    "DESCRIPTION": "Oscar Diaz Rueda, empresario malagueño con décadas de experiencia en el sector hostelero, ha impulsado tres restaurantes de referencia en la provincia. Su pasión por la gastronomía y el trato cercano lo han convertido en un referente en el sector."
+  },
+   "VIDEOS": {
+    "TEATINOS": "Marisquería El Cenachero Teatinos",
+    "MANERA": "A Mi Manera",
+    "CENTRO": "Marisquería El Cenachero Centro",
+    "BUTTON": "Reservar"
+  },
+   "CENTRO": {
+    "HERO_TITLE": "Marisquería El Cenachero - Centro",
+    "HERO_SUBTITLE": "Tradición y sabor andaluz en el corazón de Málaga",
+    "PLATOS_TITLE": "Platos destacados",
+    "RESERVA_TITLE": "¿Quieres reservar?",
+    "RESERVA_DESC": "Haz tu reserva para disfrutar de nuestros mejores mariscos en el centro de Málaga.",
+    "SHOW_FORM": "Reservar ahora",
+    "HIDE_FORM": "Ocultar formulario",
+    "MENU": "CARTA",
+    "ADDRESS_LABEL": "Dirección",
+    "ADDRESS": "Calle Compañía, 16, Distrito Centro, 29008 Málaga",
+    "PHONE_LABEL": "Teléfono",
+    "HISTORIA_TITLE": "La historia de El Cenachero Centro",
+    "HISTORIA_ALT": "Foto del restaurante El Cenachero Centro",
+    "HISTORIA_P1": "Fundado en 2020, en plena pandemia, Marisquería El Cenachero Centro nació como un proyecto valiente, con el firme propósito de acercar lo mejor del mar a la zona más emblemática de Málaga.",
+    "HISTORIA_P2": "A pesar de los tiempos difíciles, este rincón gastronómico ha logrado consolidarse gracias a su esencia: producto de calidad, cocina tradicional andaluza, y un trato cercano que invita a repetir.",
+    "HISTORIA_P3": "Ubicado en un edificio de tres plantas, cuenta con espacios amplios, elegantes y un reservado ideal para cenas íntimas o celebraciones especiales. Su encanto no reside solo en lo que se sirve en la mesa, sino en el ambiente que se respira al cruzar sus puertas.",
+    "HISTORIA_P4": "Hoy, El Cenachero Centro no solo representa la resistencia y el buen hacer, sino también la capacidad de reinventarse sin perder su identidad."
+  },
+  "FORM": {
+    "NAME": "Tu nombre",
+    "EMAIL": "Tu correo",
+    "PHONE": "Tu teléfono",
+    "GUESTS": "Nº comensales",
+    "MESSAGE": "Mensaje (opcional)",
+    "SUBMIT": "Enviar reserva"
+  },
+  "PLATOS": {
+    "BOGAVANTE": "Bogavante",
+  "CARABINEROS": "Carabineros",
+  "FIDEOS": "Fideos Tostados",
+  "QUISQUILLAS": "Quisquillas Plancha",
+  "OSTRAS": "Ostras",
+  "ATUN": "Tosta de Atún",
+  "GAZPACHUELO": "Gazpachuelo",
+  "ZAMBURILLAS": "Zamburillas",
+  "FRITURA": "Fritura Variada",
+  "GAMBAS": "Gambas Cocidas",
+  "MATRIMONIO": "Matrimonio",
+  "CONCHAS": "Conchas Finas",
+  "PULPO": "Pulpo a la Gallega",
+  "PEREGRINA": "Peregrina Gratinada"
+  },
+   "TEATINOS": {
+    "HERO_TITLE": "Cenachero Teatinos",
+    "HERO_SUBTITLE": "Tradición y sabor andaluz en el corazón de Málaga",
+    "PLATOS_TITLE": "Platos destacados",
+    "RESERVA_TITLE": "¿Quieres reservar?",
+    "RESERVA_DESC": "Haz tu reserva para disfrutar de nuestros mejores mariscos en Teatinos.",
+    "SHOW_FORM": "Reservar ahora",
+    "HIDE_FORM": "Ocultar formulario",
+    "MENU": "CARTA",
+    "ADDRESS_LABEL": "Dirección",
+    "ADDRESS": "Av. Plutarco, 20, Puerto de la Torre, 29010 Málaga",
+    "PHONE_LABEL": "Teléfono",
+    "HISTORIA_TITLE": "La historia de El Cenachero",
+    "HISTORIA_ALT": "Foto del restaurante El Cenachero",
+    "HISTORIA_P1": "Fundado en 2004, Marisquería El Cenachero se ha convertido en un auténtico referente gastronómico en el barrio de Teatinos, Málaga.",
+    "HISTORIA_P2": "Aquí, la tradición y la calidad van de la mano. Cada plato está pensado para realzar el sabor del marisco y el pescado.",
+    "HISTORIA_P3": "En El Cenachero, el protagonista siempre es el cliente... y el producto."
+  },
+ "MANERA": {
+  "TITULO": "A Mi Manera",
+  "SUBTITULO": "Un rincón único para disfrutar con los tuyos",
+  "PLATOS_DESTACADOS": "Platos destacados",
+  "RESERVAR_TITULO": "Reserva tu mesa",
+  "RESERVAR_TEXTO": "Completa el siguiente formulario para reservar en nuestro restaurante.",
+  "BOTON_RESERVAR": "Reservar",
+  "BOTON_OCULTAR": "Ocultar formulario",
+  "BOTON_CARTA": "Ver carta",
+  "DIRECCION": "📍 Dirección: Calle Andrómeda, 19, Teatinos",
+  "TELEFONO": "📞 Teléfono: 623 58 99 61",
+  "HISTORIA_TITULO": "Nuestra historia",
+  "HISTORIA_ALT": "Imagen del restaurante A Mi Manera",
+  "HISTORIA_TEXTO1": "Desde nuestros inicios, nos hemos esforzado por ofrecer comida casera con un toque especial.",
+  "HISTORIA_TEXTO2": "Nuestra pasión por la cocina y el trato familiar nos ha convertido en un referente en la zona.",
+  "PLATO_FLAMENQUIN": "Flamenquín",
+  "PLATO_JAMON_ASADO": "Jamón asado",
+  "PLATO_CROQUETAS": "Croquetas caseras",
+  "PLATO_CACHOPO": "Cachopo relleno",
+  "PLATO_MONTES": "Montes de Málaga",
+  "PLATO_PINCHO": "Pincho de gambas",
+  "PLATO_BERENJENAS": "Berenjenas con miel",
+  "ENVIAR": "Enviar reserva"
+},
+
+"TRABAJA": {
+  "HERO_TITULO": "Trabaja con nosotros",
+  "HERO_TEXTO": "¿Quieres formar parte de nuestro equipo?<br>Estamos buscando personas apasionadas por la hostelería. ¡Déjanos tu currículum!",
+  "FORM_TITULO": "Envíanos tu solicitud",
+  "FORM_SUBTITULO": "Rellena los siguientes campos y adjunta tu currículum en PDF",
+  "INPUT_NOMBRE": "Nombre",
+  "INPUT_APELLIDOS": "Apellidos",
+  "INPUT_CORREO": "Correo electrónico",
+  "INPUT_MENSAJE": "Mensaje (opcional)",
+  "BOTON_ENVIAR": "Enviar solicitud",
+  "IMG1_ALT": "Camarera sirviendo",
+  "IMG2_ALT": "Camarero atento"
+}
+
+}
+  
+
+
+

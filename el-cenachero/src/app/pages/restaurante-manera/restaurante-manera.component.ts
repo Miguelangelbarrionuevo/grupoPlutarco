@@ -13,14 +13,14 @@ export class RestauranteManeraComponent {
   @ViewChild('carousel', { static: false }) carousel!: ElementRef;
 
   platos = [
-    { imagen: '/assets/img/img-platos/flamenquin.jpeg', nombre: 'Flamenquin' },
-    { imagen: '/assets/img/img-platos/jamonAsado.jpeg', nombre: 'Jamon Asado' },
-    { imagen: '/assets/img/img-platos/croquetas.jpeg', nombre: 'Croquetas Pedro Ximenes ' },
-    { imagen: '/assets/img/img-platos/cachopo.jpeg', nombre: 'Cachopo De Ternera' },
-    { imagen: '/assets/img/img-platos/jamonMontes.jpeg', nombre: 'Plato de los Montes' },
-    { imagen: '/assets/img/img-platos/pinchoGamba.jpeg', nombre: 'Pincho de gamba' },
-    { imagen: '/assets/img/img-platos/berenjenas.jpeg', nombre: 'Berenjenas' },
-  ];
+  { imagen: '/assets/img/img-platos/flamenquin.jpeg', nombre: 'MANERA.PLATO_FLAMENQUIN' },
+  { imagen: '/assets/img/img-platos/jamonAsado.jpeg', nombre: 'MANERA.PLATO_JAMON_ASADO' },
+  { imagen: '/assets/img/img-platos/croquetas.jpeg', nombre: 'MANERA.PLATO_CROQUETAS' },
+  { imagen: '/assets/img/img-platos/cachopo.jpeg', nombre: 'MANERA.PLATO_CACHOPO' },
+  { imagen: '/assets/img/img-platos/jamonMontes.jpeg', nombre: 'MANERA.PLATO_MONTES' },
+  { imagen: '/assets/img/img-platos/pinchoGamba.jpeg', nombre: 'MANERA.PLATO_PINCHO' },
+  { imagen: '/assets/img/img-platos/berenjenas.jpeg', nombre: 'MANERA.PLATO_BERENJENAS' }
+];
   
 
   reserva = {

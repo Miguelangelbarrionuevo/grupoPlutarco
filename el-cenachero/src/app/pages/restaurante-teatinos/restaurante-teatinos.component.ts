@@ -13,15 +13,16 @@ export class RestauranteTeatinosComponent {
   @ViewChild('carousel', { static: false }) carousel!: ElementRef;
 
   platos = [
-    { imagen: '/assets/img/img-platos/fritura.jpeg', nombre: 'Fritura Variada' },
-    { imagen: '/assets/img/img-platos/gambasCocidas.jpeg', nombre: 'Gambas Cocidas' },
-    { imagen: '/assets/img/img-platos/matrimonio.jpeg', nombre: 'Matrimonio' },
-    { imagen: '/assets/img/img-platos/conchas.jpeg', nombre: 'Conchas Finas' },
-    { imagen: '/assets/img/img-platos/ostras.jpeg', nombre: 'Ostras' },
-    { imagen: '/assets/img/img-platos/pulpogallega.jpeg', nombre: 'Pulpo A La Gallega' },
-    { imagen: '/assets/img/img-platos/tostaAtun.jpeg', nombre: 'Tosta De Atun' },
-    { imagen: '/assets/img/img-platos/gratinada.jpeg', nombre: 'Peregrina Gratinada' }
-  ];
+  { imagen: '/assets/img/img-platos/fritura.jpeg', nombre: 'PLATOS.FRITURA' },
+  { imagen: '/assets/img/img-platos/gambasCocidas.jpeg', nombre: 'PLATOS.GAMBAS' },
+  { imagen: '/assets/img/img-platos/matrimonio.jpeg', nombre: 'PLATOS.MATRIMONIO' },
+  { imagen: '/assets/img/img-platos/conchas.jpeg', nombre: 'PLATOS.CONCHAS' },
+  { imagen: '/assets/img/img-platos/ostras.jpeg', nombre: 'PLATOS.OSTRAS' },
+  { imagen: '/assets/img/img-platos/pulpogallega.jpeg', nombre: 'PLATOS.PULPO' },
+  { imagen: '/assets/img/img-platos/tostaAtun.jpeg', nombre: 'PLATOS.ATUN' },
+  { imagen: '/assets/img/img-platos/gratinada.jpeg', nombre: 'PLATOS.PEREGRINA' }
+];
+
   
 
   reserva = {
