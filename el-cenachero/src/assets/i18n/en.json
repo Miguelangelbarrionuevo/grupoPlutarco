@@ -76,7 +76,7 @@
   },
   "TEATINOS": {
   "HERO_TITLE": "Cenachero Teatinos",
-  "HERO_SUBTITLE": "Tradition and Andalusian flavor in the heart of Málaga",
+  "HERO_SUBTITLE": "Cooking history since 2004",
   "PLATOS_TITLE": "Featured Dishes",
   "RESERVA_TITLE": "Want to book?",
   "RESERVA_DESC": "Make your reservation and enjoy our best seafood in Teatinos.",
@@ -94,7 +94,7 @@
 },
 "MANERA": {
   "TITULO": "A Mi Manera",
-  "SUBTITULO": "A unique spot to enjoy with your loved ones",
+  "SUBTITULO": "Where tradition, music, and art come together to create unforgettable moments",
   "PLATOS_DESTACADOS": "Featured dishes",
   "RESERVAR_TITULO": "Book your table",
   "RESERVAR_TEXTO": "Fill out the form below to reserve at our restaurant.",
@@ -103,10 +103,11 @@
   "BOTON_CARTA": "View menu",
   "DIRECCION": "📍 Address: Calle Andrómeda, 19, Teatinos",
   "TELEFONO": "📞 Phone: 623 58 99 61",
-  "HISTORIA_TITULO": "Our story",
+"HISTORIA_TITULO": "The Story of A Mi Manera",
   "HISTORIA_ALT": "Image of A Mi Manera restaurant",
-  "HISTORIA_TEXTO1": "From the beginning, we've strived to offer homemade food with a special touch.",
-  "HISTORIA_TEXTO2": "Our passion for cooking and a family-friendly approach has made us a local favorite.",
+  "HISTORIA_TEXTO1": "Since our beginnings, at A Mi Manera we’ve offered more than just food: we create an experience. With homemade cuisine filled with tradition and love, we’ve become the go-to tavern in Teatinos.",
+"HISTORIA_TEXTO2": "Each dish is crafted like a work of art, paired with a selection of over 8 sweet wines. Flamenco, portraits of Andalusian music legends, and a unique atmosphere make A Mi Manera the place where tradition, flavor, and art come together.",
+
   "PLATO_FLAMENQUIN": "Flamenquín",
   "PLATO_JAMON_ASADO": "Roast ham",
   "PLATO_CROQUETAS": "Homemade croquettes",

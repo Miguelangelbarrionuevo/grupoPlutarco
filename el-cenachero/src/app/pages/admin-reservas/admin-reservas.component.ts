@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-admin-reservas',
@@ -14,8 +15,7 @@ export class AdminReservasComponent implements OnInit {
 
   constructor(private http: HttpClient) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   seleccionarRestaurante(id: number) {
     this.restauranteIdSeleccionado = id;
@@ -32,7 +32,7 @@ export class AdminReservasComponent implements OnInit {
     });
 
     const hoy = new Date().toISOString().split('T')[0];
-    let url = 'http://127.0.0.1:8000/api/admin/reservas';
+    let url = `${environment.apiUrl}/admin/reservas`;
 
     if (this.filtro === 'futuras') {
       url += '?futuras=1';
@@ -76,7 +76,9 @@ export class AdminReservasComponent implements OnInit {
       Authorization: `Bearer ${token}`,
     });
 
-    this.http.delete(`http://127.0.0.1:8000/api/admin/reservas/${id}`, { headers }).subscribe({
+    const url = `${environment.apiUrl}/admin/reservas/${id}`;
+
+    this.http.delete(url, { headers }).subscribe({
       next: () => {
         alert('✅ Reserva eliminada correctamente');
         this.obtenerReservas();

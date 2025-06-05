@@ -2,7 +2,11 @@
 
 <section class="admin-login-container">
   <form class="login-card" (ngSubmit)="login()" #form="ngForm">
-    <h2>Panel de Administración</h2>
+   <h2 class="titulo-panel">
+  <span>Panel de Administración</span>
+  <img src="/assets/img/logo-negro-login.png" alt="Logo" class="logo-mini" />
+</h2>
+
 
     <input type="email" name="email" [(ngModel)]="email" placeholder="Correo electrónico" required />
     <input type="password" name="password" [(ngModel)]="password" placeholder="Contraseña" required />

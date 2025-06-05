@@ -1,6 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ReservaService } from '../../services/reserva.service';
-
 @Component({
   selector: 'app-restaurante-centro',
   standalone: false,

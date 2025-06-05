@@ -77,7 +77,7 @@
   },
    "TEATINOS": {
     "HERO_TITLE": "Cenachero Teatinos",
-    "HERO_SUBTITLE": "Tradición y sabor andaluz en el corazón de Málaga",
+    "HERO_SUBTITLE": "Cocinando historia desde 2004",
     "PLATOS_TITLE": "Platos destacados",
     "RESERVA_TITLE": "¿Quieres reservar?",
     "RESERVA_DESC": "Haz tu reserva para disfrutar de nuestros mejores mariscos en Teatinos.",
@@ -89,13 +89,14 @@
     "PHONE_LABEL": "Teléfono",
     "HISTORIA_TITLE": "La historia de El Cenachero",
     "HISTORIA_ALT": "Foto del restaurante El Cenachero",
-    "HISTORIA_P1": "Fundado en 2004, Marisquería El Cenachero se ha convertido en un auténtico referente gastronómico en el barrio de Teatinos, Málaga.",
-    "HISTORIA_P2": "Aquí, la tradición y la calidad van de la mano. Cada plato está pensado para realzar el sabor del marisco y el pescado.",
-    "HISTORIA_P3": "En El Cenachero, el protagonista siempre es el cliente... y el producto."
+    "HISTORIA_P1": "Desde su apertura en 2004, Marisquería El Cenachero se ha consolidado como un auténtico referente gastronómico en el corazón del barrio de Teatinos, Málaga, siendo sinónimo de tradición, sabor y cercanía.",
+"HISTORIA_P2": "En cada plato, la tradición y la calidad caminan juntas. Nuestra cocina está pensada para ensalzar al máximo el sabor natural del marisco y el pescado más frescos, respetando su esencia y origen.",
+"HISTORIA_P3": "En El Cenachero, el cliente es siempre el protagonista. Aquí, cada visita es una experiencia, y cada producto, un homenaje al mar."
+
   },
  "MANERA": {
   "TITULO": "A Mi Manera",
-  "SUBTITULO": "Un rincón único para disfrutar con los tuyos",
+  "SUBTITULO": "Donde la tradición, la música y el arte se fusionan para crear momentos inolvidables",
   "PLATOS_DESTACADOS": "Platos destacados",
   "RESERVAR_TITULO": "Reserva tu mesa",
   "RESERVAR_TEXTO": "Completa el siguiente formulario para reservar en nuestro restaurante.",
@@ -104,10 +105,10 @@
   "BOTON_CARTA": "Ver carta",
   "DIRECCION": "📍 Dirección: Calle Andrómeda, 19, Teatinos",
   "TELEFONO": "📞 Teléfono: 623 58 99 61",
-  "HISTORIA_TITULO": "Nuestra historia",
+  "HISTORIA_TITULO": "La Historia De A Mi Manera",
   "HISTORIA_ALT": "Imagen del restaurante A Mi Manera",
-  "HISTORIA_TEXTO1": "Desde nuestros inicios, nos hemos esforzado por ofrecer comida casera con un toque especial.",
-  "HISTORIA_TEXTO2": "Nuestra pasión por la cocina y el trato familiar nos ha convertido en un referente en la zona.",
+ "HISTORIA_TEXTO1": "Desde nuestros inicios, en A Mi Manera apostamos por algo más que comida: apostamos por crear una experiencia. Con una cocina casera que respira tradición y cariño, nos hemos convertido en la tasca de referencia en Teatinos.",
+"HISTORIA_TEXTO2": "Cada plato está pensado como una obra de arte, acompañado de una selección de más de 8 vinos dulces. Flamenco, cuadros de leyendas andaluzas y un ambiente único hacen de A Mi Manera el lugar donde la tradición, el sabor y el arte se fusionan.",
   "PLATO_FLAMENQUIN": "Flamenquín",
   "PLATO_JAMON_ASADO": "Jamón asado",
   "PLATO_CROQUETAS": "Croquetas caseras",

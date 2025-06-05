@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  laravel:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - mysql
+    networks:
+      - cenachero_net
+
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: contraseña_segura
+      MYSQL_DATABASE: grupoPlutarco
+    volumes:
+      - dbdata:/var/lib/mysql
+    networks:
+      - cenachero_net
+
+networks:
+  cenachero_net:
+
+volumes:
+  dbdata:

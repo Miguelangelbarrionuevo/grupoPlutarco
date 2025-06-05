@@ -1,12 +1,13 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class SolicitudService {
-  private apiUrl = 'http://127.0.0.1:8000/api/trabaja';
+  private apiUrl = `${environment.apiUrl}/trabaja`;  // ✅ usando variable de entorno
 
   constructor(private http: HttpClient) {}
 

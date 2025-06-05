@@ -1,6 +1,6 @@
 .admin-login-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #1a1a1a, #343434);
+    background-image: url('/assets/img/img-fondos/04-fondo.jpg');
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,13 +9,28 @@
 }
 
 .login-card {
-  background-color: #ffffff;
+background-color: #ffffff;
   padding: 40px 30px;
   border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 100px 100px 900px rgba(0, 0, 0, 0.3);
   max-width: 400px;
   width: 100%;
   text-align: center;
+  animation: fadeInUp 0.6s ease;
+  z-index: 2;
+  position: relative;
+  
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .login-card h2 {
@@ -23,6 +38,8 @@
   margin-bottom: 20px;
   color: #1a1a1a;
   font-weight: 600;
+      font-family: 'Alex Brush', cursive;
+
 }
 
 .login-card input {
@@ -30,8 +47,21 @@
   padding: 12px 14px;
   margin: 10px 0;
   border-radius: 6px;
+    box-sizing: border-box;
+
   border: 1px solid #ccc;
   font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-card input:focus {
+  border-color: #f1c40f;
+  box-shadow: 0 0 5px rgba(241, 196, 15, 0.5);
+  outline: none;
+}
+
+.input-error {
+  border-color: red !important;
 }
 
 .login-card button {
@@ -44,7 +74,7 @@
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.1s ease;
 }
 
 .login-card button:hover {
@@ -52,10 +82,15 @@
   color: black;
 }
 
+.login-card button:active {
+  transform: scale(0.98);
+}
+
 .login-error {
   margin-top: 10px;
   color: red;
   font-size: 0.95rem;
+  font-weight: 500;
 }
 
 @media (max-width: 500px) {
@@ -66,4 +101,41 @@
   .login-card h2 {
     font-size: 1.6rem;
   }
+}
+.titulo-panel {
+  display: flex;
+  align-items: center;         /* Alinea verticalmente */
+  justify-content: center;     /* Centra horizontalmente */
+  gap: 12px;
+  font-size: 4rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  font-family: 'Alex Brush', cursive;
+  flex-wrap: wrap;             /* Para que se adapte en móviles */
+  line-height: 1.2;            /* Mejora alineación */
+}
+
+.titulo-panel span {
+  display: inline-block;
+}
+
+@keyframes flipEspejo {
+  0% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.logo-mini {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+  animation: flipEspejo 3s ease-in-out infinite;
 }

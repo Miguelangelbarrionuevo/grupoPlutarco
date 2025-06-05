@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { environment } from '../../../environments/environment';
+
 @Component({
   selector: 'app-admin-login',
   standalone: false,
@@ -8,14 +10,14 @@ import { Router } from '@angular/router';
   styleUrl: './admin-login.component.css'
 })
 export class AdminLoginComponent {
- email = '';
+  email = '';
   password = '';
-error: any;
+  error: any;
 
   constructor(private http: HttpClient, private router: Router) {}
 
   login() {
-    this.http.post<any>('http://127.0.0.1:8000/api/admin/login', {
+    this.http.post<any>(`${environment.apiUrl}/admin/login`, {
       email: this.email,
       password: this.password
     }).subscribe({

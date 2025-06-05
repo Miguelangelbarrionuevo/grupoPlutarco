@@ -1,5 +1,5 @@
 .panel-admin {
-  background-color: #f4f4f4;
+    background-image: url('/assets/img/img-fondos/04-fondo.jpg');
   min-height: 100vh;
   padding: 60px 20px;
   display: flex;
@@ -8,7 +8,7 @@
 }
 
 .panel-container {
-  background: #fff;
+    background-image: url('/assets/img/img-fondos/04-fondo.jpg');
   padding: 40px;
   max-width: 900px;
   width: 100%;
@@ -18,9 +18,11 @@
 
 .panel-container h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 4rem;
   margin-bottom: 30px;
   color: #1a1a1a;
+    font-family: 'Alex Brush', cursive;
+
 }
 
 .filtros {
@@ -150,3 +152,4 @@
     align-self: flex-start;
   }
 }
+
