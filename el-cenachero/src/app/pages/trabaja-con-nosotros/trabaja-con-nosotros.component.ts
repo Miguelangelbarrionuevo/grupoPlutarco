@@ -33,7 +33,7 @@ export class TrabajaConNosotrosComponent {
 
     this.solicitudService.enviarSolicitud(formData).subscribe({
       next: () => alert('¡Solicitud enviada correctamente!'),
-      error: () => alert('❌ Error al enviar la solicitud.')
+      error: () => alert(' Error al enviar la solicitud.')
     });
   }
 }

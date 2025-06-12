@@ -104,16 +104,16 @@ background-color: #ffffff;
 }
 .titulo-panel {
   display: flex;
-  align-items: center;         /* Alinea verticalmente */
-  justify-content: center;     /* Centra horizontalmente */
+  align-items: center;         
+  justify-content: center;    
   gap: 12px;
   font-size: 4rem;
   font-weight: 600;
   color: #1a1a1a;
   margin-bottom: 20px;
   font-family: 'Alex Brush', cursive;
-  flex-wrap: wrap;             /* Para que se adapte en móviles */
-  line-height: 1.2;            /* Mejora alineación */
+  flex-wrap: wrap;            
+  line-height: 1.2;          
 }
 
 .titulo-panel span {

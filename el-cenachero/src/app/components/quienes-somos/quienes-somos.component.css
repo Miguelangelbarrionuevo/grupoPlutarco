@@ -23,12 +23,12 @@
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   border: 4px solid rgba(255, 255, 255, 0.7);
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* transición suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .imagen img:hover {
-  transform: scale(1.05); /* agranda la imagen un 5% */
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4); /* sombra un poco más intensa */
+  transform: scale(1.05); 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
 

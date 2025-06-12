@@ -7,7 +7,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class ReservaService {
-  private apiUrl = `${environment.apiUrl}/reservas`;  // ✅ ahora configurable
+  private apiUrl = `${environment.apiUrl}/reservas`;  
 
   constructor(private http: HttpClient) {}
 

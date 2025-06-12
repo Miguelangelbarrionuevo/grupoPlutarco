@@ -7,7 +7,7 @@ import { environment } from '../../environments/environment';
   providedIn: 'root'
 })
 export class SolicitudService {
-  private apiUrl = `${environment.apiUrl}/trabaja`;  // ✅ usando variable de entorno
+  private apiUrl = `${environment.apiUrl}/trabaja`;  
 
   constructor(private http: HttpClient) {}
 

@@ -48,7 +48,7 @@ export class AdminReservasComponent implements OnInit {
           this.reservas = soloRestaurante;
         }
       },
-      error: () => alert('❌ Error al obtener reservas')
+      error: () => alert(' Error al obtener reservas')
     });
   }
 
@@ -83,7 +83,7 @@ export class AdminReservasComponent implements OnInit {
         alert('✅ Reserva eliminada correctamente');
         this.obtenerReservas();
       },
-      error: () => alert('❌ Error al eliminar la reserva')
+      error: () => alert(' Error al eliminar la reserva')
     });
   }
 }
